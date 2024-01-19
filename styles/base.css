@@ -4,111 +4,101 @@ body {
     padding: 0;
     background: #f4f4f4;
 }
-.profile-header {
-    display: flex;
+
+header {
     background-color: #003366;
     color: white;
     padding: 20px;
-    align-items: center;padding-left: 35%;
-}
-.profile-header h1 {
-    background-color: #003366;
-    color: white;
-    padding: 20px;
-    align-items: center;
+    text-align: center;
 }
 
-.profile-header img {
+header img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    display: block;
     border: 3px solid white;
+    display: block;
+    margin: 0 auto; 
 }
-.nav {
+
+header h1 {
+    color: white;
+    margin-top: 10px; 
+}
+
+nav {
     background-color: #b6aeae;
     text-align: center;
 }
-.nav ul {
+
+nav ul {
     list-style: none;
-    padding: 2px;
+    padding: 0;
 }
-.nav li {
+
+nav li {
     padding: 7px;
     margin-bottom: 10px;
     background-color: #4b5155;
     border-radius: 10px;
 }
-.nav a {
+
+nav a {
     text-decoration: none;
     color: white;
     font-size: 18px;
+    display: block;
 }
-.course-title {
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-bottom: 5px solid #ccc;
+
+main {
     text-align: center;
 }
-.content {
+
+.course-title,
+.content,
+.information {
     padding: 20px;
     background-color: white;
-    border-top: 1px solid #ccc;
-
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
 }
+
+.course-title h2,
 .content h2 {
     color: #003366;
     border-bottom: 1px solid #003366;
     margin: 10px 0;
-    text-align: center;
     background-color: #3498db;
     padding: 15px;
     border-radius: 8px;
     color: #fff;
-
-   
 }
+
 .content ul {
     list-style: none;
     padding: 0;
+    text-align: justify;
 }
+
 .content li {
     padding: 5px 0;
     border-bottom: 1px solid #ccc;
 }
+
 .content a {
     text-decoration: none;
     color: #003366;
     font-weight: bold;
 }
-.information {
-    padding: 20px;
-    background-color: #f4f4f4;
-    border-top: 1px solid #ccc;
 
+.information {
     background-color: #4b5155;
     padding: 15px;
     border-radius: 8px;
     color: #fff;
-
-}
-.information p {
-    margin: 10px 0;
-    text-align: center;
 }
 
-.course-title h2 {
-    color: #003366;
-    border-bottom: 1px solid #003366;
-    margin: 10px 0;
-    background-color: #3498db;
-    padding: 15px;
-    border-radius: 8px;
-    color: #fff;
-}
-
-
-.footer {
+footer {display: block;
     background-color: #003366;
     color: white;
     text-align: center;
@@ -117,4 +107,3 @@ body {
     bottom: 0;
     width: 100%;
 }
-
