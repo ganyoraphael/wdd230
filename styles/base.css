@@ -1,16 +1,26 @@
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
+    font-family: Arial, sans-serif;}
+
+#content {
+    max-width: 640px;
+    background-color: #ccc5b9;
+    margin: 0 auto;
+    padding: 0 16px;
+    color: #252422;
 }
 
 header {
-    background-color: #003366;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color: #403d39;
+    display: grid;
+    place-items: center;
+    grid-template: auto / 200px auto;
+    color: #fffcf2;
+    border-radius: 20px 20px 0 0;
+    margin-top: 16px;
 }
+
+
 
 header img {
     width: 100px;
@@ -21,10 +31,17 @@ header img {
     margin: 0 auto; 
 }
 
+
+
+
 header h1 {
-    color: white;
-    margin-top: 10px; 
+    text-align: center;
 }
+
+nav {
+    background-color: #fffcf2;
+}
+
 
 nav {
     background-color: #b6aeae;
@@ -39,7 +56,7 @@ nav ul {
 nav li {
     padding: 7px;
     margin-bottom: 10px;
-    background-color: #4b5155;
+    background-color: #0d0d0e;
     border-radius: 10px;
 }
 
@@ -50,60 +67,52 @@ nav a {
     display: block;
 }
 
+
+nav a:hover {
+    color: #beb4a2;
+}
+
 main {
+    display: grid;
+    grid-template: auto auto auto / auto;
+}
+
+main h2 {
     text-align: center;
 }
 
-.course-title,
-.content,
-.information {
-    padding: 20px;
-    background-color: white;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
+.course {
+    background-color: #fffcf2;
+    margin: 0 0 16px 0;
+    padding: 0 16px;
+    border-radius: 10px;
 }
 
-.course-title h2,
-.content h2 {
-    color: #003366;
-    border-bottom: 1px solid #003366;
-    margin: 10px 0;
-    background-color: #3498db;
-    padding: 15px;
-    border-radius: 8px;
-    color: #fff;
+.course h3 {
+    background-color: #c34e21;
+    color: #fffcf2;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 10px 10px 0 0;
 }
 
-.content ul {
-    list-style: none;
-    padding: 0;
-    text-align: justify;
+.course p {
+    text-align: center;
 }
 
-.content li {
-    padding: 5px 0;
-    border-bottom: 1px solid #ccc;
-}
-
-.content a {
-    text-decoration: none;
-    color: #003366;
-    font-weight: bold;
-}
-
-.information {
-    background-color: #4b5155;
-    padding: 15px;
-    border-radius: 8px;
-    color: #fff;
+.course li {
+    line-height: 2rem;
 }
 
 footer {display: block;
-    background-color: #003366;
+    background-color: #403d39;
     color: white;
     text-align: center;
-    padding: 10px;
-    position: relative;
     bottom: 0;
     width: 100%;
+    border-radius: 0 0 20px 20px;
+
+
+
 }
+
