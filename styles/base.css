@@ -1,6 +1,6 @@
-
 body {
-    font-family: Arial, sans-serif;}
+    font-family: 'Open Sans', sans-serif;
+}
 
 #content {
     max-width: 640px;
@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #403d39;
+    background-color: #2e211b;
     display: grid;
     place-items: center;
     grid-template: auto / 200px auto;
@@ -49,8 +49,12 @@ nav {
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 6px 0;
 }
 
 nav li {
@@ -89,7 +93,7 @@ main h2 {
 }
 
 .course h3 {
-    background-color: #c34e21;
+    background-color: #8f472a;
     color: #fffcf2;
     text-align: center;
     padding: 0.5rem;
@@ -105,7 +109,7 @@ main h2 {
 }
 
 footer {display: block;
-    background-color: #403d39;
+    background-color: #2e211b;
     color: white;
     text-align: center;
     bottom: 0;
