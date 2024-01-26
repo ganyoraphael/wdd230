@@ -108,6 +108,12 @@ main h2 {
     line-height: 2rem;
 }
 
+section iframe {
+    border: 0;
+    width: 202%;
+}
+
+
 footer {display: block;
     background-color: #2e211b;
     color: white;
@@ -115,7 +121,6 @@ footer {display: block;
     bottom: 0;
     width: 100%;
     border-radius: 0 0 20px 20px;
-
 
 
 }
