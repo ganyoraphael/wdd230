@@ -1,0 +1,52 @@
+/* Media Query Updates for middle widths */
+
+#hamburger-menu{
+    background-color: rgb(255,222,187);  
+    font-size: 2rem;
+    border: 0;
+  }
+  
+  #navbar{
+    display: none;
+  }
+  
+  #menu-open{
+    display: none;
+  }
+  
+  #menu-closed{
+    display: inline;
+  }
+  
+  #navbar.menu-active{
+    display: flex;
+  }
+  
+  #menu-open.menu-active{
+    display: inline;
+  }
+  
+  #menu-closed.menu-active{
+    display: none;
+  }
+  
+  /* Media Query Updates for middle widths */
+  
+  @media screen and (min-width: 640px) {
+      nav ul {
+        flex-direction: row;
+      }
+  
+      nav ul li {
+        text-align: center;
+      }
+  
+      #navbar{
+        display: flex;
+      }
+  
+      #hamburger-menu{
+        display: none;
+      }
+      
+    }
