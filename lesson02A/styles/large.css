@@ -1,0 +1,66 @@
+
+@media screen and (min-width: 1400px){
+    header, footer{
+        background-color: pink;
+        border: 4px black solid;
+        border-radius:1rem;
+    }
+          header{
+              display :flex ;
+              align-items: center;
+              background-color: rgb(39, 156, 219);
+          }
+          header div:nth-child(2){
+              width: 100%;
+          }
+          header h1{
+              font-family: 'PT Serif', serif;
+              font-family: 'Sofia Sans', sans-serif;
+              font-family: 'Sofia Sans Condensed', sans-serif;
+              text-align: center;
+          }
+          header img{
+              margin: 10px;
+              margin-left: 40px;
+          }
+          header img{
+              box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
+              border-radius: 20%;
+          }
+         
+            #container{
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr;
+            }
+            #section1{
+                background-color: rgb(232, 244, 247);
+                border-radius:1rem;
+            }
+
+            #section2{
+                background-color: rgb(232, 244, 247);
+                border-radius:1rem;
+            }
+    
+            #section3{
+                background-color: rgb(232, 244, 247);
+                border-radius:1rem;
+            }
+    
+            section{
+                padding: 1rem;            
+                border: 2px solid black;
+                margin: 1rem;
+            }
+
+            footer{
+            padding: 2px;
+            background-color: rgb(39, 156, 219);
+            }
+            footer p{
+                width: 100%;
+                text-align: center;
+                display: block;
+            }
+
+}
