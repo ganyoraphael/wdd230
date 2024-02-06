@@ -1,0 +1,114 @@
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* Adjustments for medium screens go here */
+    nav ul {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .social {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .spotlight {
+      display: flex;
+      flex-direction: column; /* Stack the spotlights vertically */
+    }
+  
+
+
+
+    nav button {
+        display: none;
+    }
+    nav ul#primaryNav{ 
+        display: flex;
+        margin-left: 2vw;
+        border-left: 1px solid rgba(0, 0,0,0.3);
+        justify-content: flex-start;
+        font-size: .9rem;
+    }
+    nav{
+        display: flex;
+    }
+    nav ul li a{
+        border: none;
+        border-right: 1px solid rgba(0, 0,0,0.3);
+    }
+    .stats {
+        top: 430px;
+        right: 28px;
+    }
+
+
+
+
+
+    #container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+  
+    #weather, #event, #hero {
+      grid-column: 1 / -1; /* Make specific sections span full width */
+    }
+  
+
+
+
+
+
+  #container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:repeat(5, auto);
+    gap: 10px;
+    padding: 10px;
+    height: fit-content;
+    }
+    #container section{
+        border: 1px solid black;
+    }
+    #hero{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    #newRelease{
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }.spotlight{
+        grid-column: 1/4;
+        grid-row: 3/4;
+        display: grid;   
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    #join{
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+    #event{
+        grid-column: 1/3;
+        grid-row: 5/6;
+    }
+    #weather{
+        grid-column: 3/4;
+        grid-row: 5/6;
+    }    
+
+    #section {
+    width: 500px;
+    margin: 20px auto;
+    padding: 50px;
+    border-width: 10px;
+    }
+    #spotlight3 {
+    display:none;
+    }
+    #join{
+    display: none;
+    }
+}
+    
