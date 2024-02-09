@@ -11,16 +11,72 @@ header {
   background-color: #004080; /* Header background color */
   color: #ffffff; /* Header text color */
   display: flex;
+  flex-wrap: wrap;
+  position: relative; /*Ensures that absolutely positioned children are relative to this container */
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
 }
 
-.logo img {
-  max-width: 100%;
-  height: auto;
+
+
+.title-container {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center the title and the accompanying text */
+  flex-grow: 1; /* Allows the container to grow and use available space */
 }
 
+.title-container h1 {
+  margin: 0;
+  font-size: 2rem;
+
+}
+
+.title-container p {
+  margin: 0;
+  font-size: 1rem;
+
+}
+
+
+
+/* .title h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.title p {
+  margin: 0;
+  font-size: 1rem;
+} */
+
+/* .logo img {
+  max-width: 100%;
+  height: auto;
+} */
+
+.logo {
+  position: absolute; /* Position the logo absolutely to ensure it stays on the far left */
+  left: 0.5rem; /* Spacing from the left edge */
+  /* top: 0.5rem; Spacing from the top edge */
+}
+
+.logo img{
+  margin: 10px;
+  margin-left: 20px;
+  width: 90px;
+}
+
+.title {
+  width: 100%; /* Ensure the title takes full width to center it properly */
+  text-align: center;
+}
+
+.title h1, .title p {
+  display: inline-block; /* Inline block elements can be centered with text-align */
+  margin: 0; /* Remove margin to prevent shifting */
+}
 .title h1 {
   margin: 0;
   font-size: 2rem;
@@ -30,8 +86,6 @@ header {
   margin: 0;
   font-size: 1rem;
 }
-
-
 
 /* Main content */
 #container {
@@ -81,93 +135,6 @@ footer {
   text-align: center; /* Center the text inside this container */
   padding: 1rem; /* Add some padding */
 }
-
-
-
-
-
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-nav button{
-    margin: .2rem 2vw;
-    background-color: transparent;
-    border: none;
-    font-size: 2rem;
-    columns: #555;
-}
-
-
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-
-nav ul li a{
-  display: block;
-  padding: .8rem 2vw;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-
-nav ul li.active a{
-  color: #fff;
-}
-nav ul li a:hover {
-  background-color: rgba(0,0,0,0.3);
-}
-
-
-.social a {
-  color: #ffffff; /* Social icons color */
-  margin: 0 5px;
-  font-size: 1.5rem; /* Social icons size */
-}
-
-nav {
-  background-color: #0055a5; /* Nav background color */
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-nav li a {
-  text-decoration: none;
-  color: #ffffff; /* Nav links color */
-  padding: 10px;
-  display: block;
-}
-
-#hamburgerBtn {
-  display: inline-block; /* Show the hamburger button in mobile view */
-  background: none;
-  border: none;
-  color: #ffffff;
-  font-size: 2rem;
-  margin-right: 1rem;
-}
-
-nav ul {display: none;}
-nav ul.open {display: block;}
-
-#hamburgerBtn span:nth-child(1) {display: block;}
-#hamburgerBtn span:nth-child(2) {display: none;}
-
-#hamburgerBtn.open span:nth-child(1) {display: none;}
-#hamburgerBtn.open span:nth-child(2) {display: block;}
-
-
-
-
-
 
 footer img{
   margin: 10px;
@@ -257,14 +224,6 @@ footer {
     padding: 0.5rem;
   }
 
-  .logo img{
-    margin: 10px;
-    margin-left: 40px;
-    width: 80px;
-}
-
-
-
 #container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -305,11 +264,6 @@ footer {
 }
 #meet-greet{
   text-align: center;
-}
-
-.logo img{
-  margin: 10px;
-  margin-left: 40px;
 }
 
 
@@ -493,14 +447,7 @@ body {
 }
 
 
-#hamburgerBtn {
-  display: inline-block; /* Show the hamburger button in mobile view */
-  background: none;
-  border: none;
-  color: #ffffff;
-  font-size: 2rem;
-  margin-right: 1rem;
-}
+
 
 /* Main content */
 #container {
@@ -554,25 +501,18 @@ header {
   padding: 0.5rem;
 }
 
-.logo img {
-  max-width: 100%;
-  height: auto;
-}
 
-.title h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-.title p {
-  margin: 0;
-  font-size: 1rem;
-}
 
 .social a {
   color: #ffffff; /* Social icons color */
   margin: 0 5px;
   font-size: 1.5rem; /* Social icons size */
+}
+
+.social {
+  position: absolute; /* Position social icons absolutely to ensure they stay on the far right */
+  right: 0.5rem; /* Spacing from the right edge */
+  top: 0.5rem; /* Spacing from the top edge */
 }
 
 nav {
@@ -594,8 +534,44 @@ nav li a {
   display: block;
 }
 
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+nav button{
+    margin: .2rem 2vw;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    columns: #555;
+}
+
+nav ul li a{
+  display: block;
+  padding: .8rem 2vw;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+nav ul li.active a{
+  color: #fff;
+}
+nav ul li a:hover {
+  background-color: rgba(0,0,0,0.3);
+}
+
+
+nav {
+  background-color: #0055a5; /* Nav background color */
+}
+
+nav li a {
+  text-decoration: none;
+  color: #ffffff; /* Nav links color */
+  padding: 10px;
+  display: block;
+}
+
 #hamburgerBtn {
-  display: inline-block; /* Show the hamburger button in mobile view */
+  display: inline-block;
   background: none;
   border: none;
   color: #ffffff;
@@ -603,24 +579,49 @@ nav li a {
   margin-right: 1rem;
 }
 
+nav ul {display: none;}
+nav ul.open {display: block;}
+
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
 
 
-.logo img {
-  max-width: 100%;
-  height: auto;
-}
-
-.title h1 {
-  margin: 0;
+/* #MenuButton {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
   font-size: 2rem;
+  color: var(--light-text);
+  z-index: 10;
 }
 
-.title p {
-  margin: 0;
-  font-size: 1rem;
+#MenuButton::before {
+  content: "☰";
 }
 
+.menuOpen #MenuButton::before {
+  content: "x";
+  color: #000;
+}
 
+nav ul {
+  display: none;
+}
+
+nav.menuOpen ul {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0.5rem;
+  right: 0rem;
+  z-index: 1;
+  background: var(--light-text);
+  width: 100%;
+  border: var(--dark-gray) solid 1px;
+} */
 
 
 

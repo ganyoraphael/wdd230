@@ -5,24 +5,48 @@
       justify-content: space-around;
     }
   
-    .social {
-      display: flex;
-      justify-content: center;
-    }
-  
     .spotlight {
       display: flex;
       flex-direction: column; /* Stack the spotlights vertically */
     }
   
+        /* Adjustments for mobile screens go here */
+        
+        .logo, .social {
+          position: static; /* Return to the normal document flow on smaller screens */
+        }
+        .logo {
+            order: -1; /* Logo comes first */
+          }
+        .title-container{
+          padding-top: 3rem;
+          order: 0; /* Title and text come second */
 
+        }
+      
+        header {
+          display: flex;
+          /* flex-direction: row; */
+          justify-content: space-between;
+          flex-direction: column;
+          text-align: center;
+        }
+      
+
+        .social {
+            position: absolute; /* Position the social icons absolutely */
+            right: 0.5rem; /* Position the social icons to the right */
+            top: 50%;
+            transform: translateY(-50%); /* Align the social icons vertically */
+          }
+          
 
 
     nav button {
         display: none;
     }
     nav ul#primaryNav{ 
-        display: flex;
+        /* display: flex; */
         margin-left: 2vw;
         border-left: 1px solid rgba(0, 0,0,0.3);
         justify-content: flex-start;
@@ -53,7 +77,6 @@
     #weather, #event, #hero {
       grid-column: 1 / -1; /* Make specific sections span full width */
     }
-  
 
 
 
@@ -111,4 +134,3 @@
     display: none;
     }
 }
-    
