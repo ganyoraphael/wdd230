@@ -45,7 +45,7 @@
       gap: 1rem;
     }
   
-    footer .footer-content {
+    /* footer .footer-content {
       display: flex;
       justify-content: space-between;
       padding: 1rem 3rem;
@@ -54,7 +54,7 @@
     footer .footer-base {
       padding: 0.5rem 3rem;
     }
-  
+   */
   
 
   nav ul li a {
