@@ -118,23 +118,7 @@ footer {
   text-align: center;
   padding: 0.5rem;
 }
-#hero {
-  width: 100%; /* Full width */
-  display: block; /* Default block display */
-}
 
-#hero .herodiv picture img {
-  width: 100%;
-  height: auto; /* Maintain aspect ratio */
-}
-
-/* Content that overlays the hero image */
-#hero .stats {
-  position: relative; /* Relative to its normal position */
-  z-index: 2; /* Ensures the content is above the background image */
-  text-align: center; /* Center the text inside this container */
-  padding: 1rem; /* Add some padding */
-}
 
 footer img{
   margin: 10px;
@@ -154,22 +138,28 @@ footer p{
   justify-content: flex-end;
   color: rgb(0, 0, 0);
 }
+/* .footer-content {
+  display: block;
+  padding: 1rem;
+} */
 /* Footer */
-.footer-content{
+/* .footer-content{
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
+} */
+.footer-content {
+  display: flex; /* Use flexbox to align items in a row */
+  justify-content: space-around; /* This will space out the items evenly */
+  align-items: center; /* This will vertically align items in the middle */
 }
 .footer-base{
   text-align: center;
   color: #eee;
-  background-color: #0800f9;
+  background-color: #004080; /* Header background color */
 }
 .footer-base p{
   color: #eee;
-}
-.footer-contact{
-  text-align: center;
 }
 footer hr{
   height: 1px;
@@ -197,8 +187,16 @@ footer {
   padding: 1rem;
 }
 
-.footer-contact, .footer-map {
+/* .footer-contact, .footer-map {
   text-align: center;
+} */
+.footer-logo, .footer-contact, .footer-map {
+  flex: 1; 
+  text-align: center; 
+}
+
+.footer-logo, .footer-contact, .footer-map {
+  padding: 0 10px;
 }
 
 .footer-base {
@@ -210,14 +208,9 @@ footer {
     color: #333; /* Footer text color */
   }
   
-  .footer-content {
-    display: block;
-    padding: 1rem;
-  }
   
-  .footer-contact, .footer-map {
-    text-align: center;
-  }
+  
+ 
   
   .footer-base {
     text-align: center;
@@ -259,9 +252,7 @@ footer {
   grid-row: 5/6;
   display: grid;
 }
-#join {
-  display:none;
-}
+
 #meet-greet{
   text-align: center;
 }
@@ -287,24 +278,7 @@ header h1 {
   color: white;
 }
 
-.stats {
-  position: absolute;
-  background: radial-gradient(#2256b2, #a0b5ec);
-  border: 1px solid rgba(0,0,0,.1);
-  padding: -0.5rem;
-  box-shadow: 0 0 30px #333;
-  opacity: 0.8;
-  border-radius: 10px;
-  top: 10px;
-  right: 100px;
-  width: fit-content;
-}
-.stats a{
-  margin: 10px;
-  color: yellow;
-  font-size: 2rem;
-  text-decoration: none;
-}
+
 
 /* main {
 	max-width: 820px;
@@ -334,11 +308,7 @@ main {
 #event {
     background-color: #00a4fd;
 }
-.herodiv img {
-    position: relative;
-	width: 100% ;
-    height: 100%;
-}
+
 
 h2 {
 	margin: 0 0 .5rem;
@@ -387,6 +357,9 @@ color: #eee;
 margin-bottom: 50px ;
 text-align: center;
 font-size: 25px;
+}
+#join {
+  display:none;
 }
 
 
@@ -439,16 +412,6 @@ margin-bottom: 1rem;
 
 }
 
-body {
-  font-family: 'Arial', sans-serif;
-  color: #333; /* Example text color */
-  background-color: #f8f8f8; /* Example background color */
-  margin: 0; /* Remove default margin */
-}
-
-
-
-
 /* Main content */
 #container {
   display: block;
@@ -461,45 +424,70 @@ section {
   padding: 1rem;
 }
 
-/* Footer */
-
-#hero {
-  width: 100%; /* Full width */
-  display: block; /* Default block display */
+/* #hero {
+  width: 100%;
+  display: block;
 }
 
 #hero .herodiv picture img {
   width: 100%;
-  height: auto; /* Maintain aspect ratio */
+  height: auto;
+} */
+/* #hero {
+  width: 100%; 
+  display: block; 
 }
+.herodiv img {
+  position: relative;
+width: 100% ;
+  height: 100%;
+}
+#hero .herodiv picture img {
+  width: 100%;
+  height: auto;
+} */
+
+#hero .herodiv picture img {
+  width: 100%; /* Stretch the image to cover the full width of its container */
+  height: 100%; /* Stretch the image to cover the full height of its container */
+  object-fit: cover; /* Cover the container without losing aspect ratio */
+  display: block; /* Remove any default inline spacing */
+}
+#hero .herodiv {
+  background-image: url('./images/hero.jpg'); /* Replace with your image path */
+  background-position: center; /* Center the image */
+  background-size: cover; /* Cover the entire area of the div */
+  height: 100%; /* Set the height you want for your hero section */
+}
+
+
 
 /* Content that overlays the hero image */
 #hero .stats {
-  position: relative; /* Relative to its normal position */
+  position: absolute; /* Relative to its normal position */
   z-index: 2; /* Ensures the content is above the background image */
   text-align: center; /* Center the text inside this container */
   padding: 1rem; /* Add some padding */
 }
-
-
-
-
-body {
-  font-family: 'Arial', sans-serif;
-  color: #333; /* Example text color */
-  background-color: #f8f8f8; /* Example background color */
-  margin: 0; /* Remove default margin */
-}
-
-
-header {
-  background-color: #004080; /* Header background color */
-  color: #ffffff; /* Header text color */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.stats {
+  position: absolute;
+  background: radial-gradient(#2256b2, #a0b5ec);
+  border: 1px solid rgba(0,0,0,.1);
   padding: 0.5rem;
+  box-shadow: 0 0 30px #333;
+  opacity: 0.8;
+  border-radius: 10px;
+  top: 10px;
+  right: 100px;
+  width: fit-content;
 }
+.stats a{
+  margin: 10px;
+  color: yellow;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
 
 
 
@@ -541,7 +529,7 @@ nav button{
     background-color: transparent;
     border: none;
     font-size: 2rem;
-    columns: #555;
+    /* columns: #555; */
 }
 
 nav ul li a{
@@ -637,7 +625,6 @@ section {
   margin-bottom: 1rem;
   padding: 1rem;
 }
-
 
 
 
