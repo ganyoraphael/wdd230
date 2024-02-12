@@ -19,19 +19,25 @@ header {
 }
 
 
-
 .title-container {
-  display: flex;
+  display: flex; /* Use flexbox to align children */
   flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center the title and the accompanying text */
-  flex-grow: 1; /* Allows the container to grow and use available space */
+  align-items: center; /* Center-align the flex items horizontally */
+  justify-content: center; /* Center-align the flex items vertically */
+  height: 100%;
+  flex-grow: 1; 
+
 }
 
 .title-container h1 {
   margin: 0;
   font-size: 2rem;
-
+  text-align: center; /* Center the text */
 }
+
+
+
+
 
 .title-container p {
   margin: 0;
@@ -57,7 +63,7 @@ header {
   text-align: center;
 }
 
-.title h1, .title p {
+.title h4, .title p {
   display: inline-block; /* Inline block elements can be centered with text-align */
   margin: 0; /* Remove margin to prevent shifting */
 }
@@ -253,7 +259,7 @@ main {
   grid: auto / auto;
 }
 
-#event h1 {
+#event h4 {
 	text-align: center;
 	font-size: 2rem;
 	text-shadow: .25rem .25rem .75rem #333;
@@ -361,11 +367,11 @@ font-size: 25px;
   color:#eee;
 }
 
-#weather h1 {
+#weather h4 {
   text-align: center;
-font-size: 2rem;
-text-shadow: .25rem .25rem .75rem #333;
-margin-bottom: 1rem;
+  font-size: 2rem;
+  text-shadow: .25rem .25rem .75rem #333;
+  margin-bottom: 1rem;
   padding: 5px;
   color: rgb(249, 228, 1);
 }
@@ -435,7 +441,7 @@ section {
 .social a {
   color: #ffffff; /* Social icons color */
   margin: 0 5px;
-  font-size: 1.5rem; /* Social icons size */
+  font-size: 1.5rem;
 }
 
 .social {
@@ -511,11 +517,19 @@ nav li a {
 nav ul {display: none;}
 nav ul.open {display: block;}
 
-#hamburgerBtn span:nth-child(1) {display: block;}
+/* #hamburgerBtn span:nth-child(1) {display: block;}
 #hamburgerBtn span:nth-child(2) {display: none;}
 
 #hamburgerBtn.open span:nth-child(1) {display: none;}
-#hamburgerBtn.open span:nth-child(2) {display: block;}
+#hamburgerBtn.open span:nth-child(2) {display: block;} */
+
+#hamburgerBtn span:nth-child(1) { display: block; } /* Always show hamburger icon */
+#hamburgerBtn span:nth-child(2) { display: none; } /* Hide X icon by default */
+
+/* When 'is-active' class is toggled, hide the hamburger and show the X */
+#hamburgerBtn.is-active span:nth-child(1) { display: none; }
+#hamburgerBtn.is-active span:nth-child(2) { display: block; }
+
 
 
 /* #MenuButton {
