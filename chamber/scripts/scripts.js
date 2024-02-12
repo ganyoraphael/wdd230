@@ -1,10 +1,9 @@
-/// Footer updates
+// Footer updates
 const date = new Date();
-const yearString = date.toLocaleDateString('en-US', {
-    year: 'numeric'
-});
-document.querySelector("#CopyrightYear").innerHTML = yearString;
-document.querySelector("#LastUpdated").innerHTML = document.lastModified;
+const yearString = date.getFullYear(); // Just get the full year
+document.getElementById("CopyrightYear").textContent = yearString;
+document.getElementById("LastUpdated").textContent = document.lastModified;
+
 
 /// Responsive Menu
 const nav = document.querySelector("nav");
