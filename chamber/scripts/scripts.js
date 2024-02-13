@@ -7,6 +7,17 @@ document.getElementById("LastUpdated").textContent = document.lastModified;
 
 
 
+
+/// Dark Mode Support
+const darkModeButton = document.querySelector("#DarkModeButton");
+const body = document.querySelector("body");
+
+darkModeButton.addEventListener('click', () => {
+    body.classList.toggle("darkMode");
+});
+
+
+
 document.addEventListener('DOMContentLoaded', (event) => {
     const hamburgerBtn = document.getElementById('hamburgerBtn');
     const primaryNav = document.getElementById('primaryNav');
@@ -16,3 +27,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         hamburgerBtn.classList.toggle('is-active'); // Toggle a class to change the button's appearance
     });
 });
+
+ 
+  

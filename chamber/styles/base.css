@@ -1,12 +1,12 @@
 /* Base styles that apply to all screen sizes */
+
+
 body {
   font-family: 'Arial', sans-serif;
   color: #333; /* Example text color */
   background-color: #f8f8f8; /* Example background color */
   margin: 0; /* Remove default margin */
 }
-
-
 header {
   background-color: #004080; /* Header background color */
   color: #ffffff; /* Header text color */
@@ -17,8 +17,24 @@ header {
   align-items: center;
   padding: 0.5rem;
 }
+/* header {
+  background-image: url('https://github.com/ganyoraphael/wdd230/blob/main/images/raph.jpg');
+  background-size: cover; 
+  background-position: center; 
+  min-height: 250px; 
+  color: #ffffff; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+} */
 
-
+header section 
+{
+    background-image: url("../images/stroudsburg-head-image.jpg");
+    padding: 2em;
+}
 .title-container {
   display: flex; /* Use flexbox to align children */
   flex-direction: column; /* Stack children vertically */
@@ -26,6 +42,8 @@ header {
   justify-content: center; /* Center-align the flex items vertically */
   height: 100%;
   flex-grow: 1; 
+  background-image: url("../images/header2.jpeg");
+  padding: 2em;  
 
 }
 
@@ -433,16 +451,17 @@ section {
 
 
 .social a {
-  color: #ffffff; /* Social icons color */
+  color: #ffffff;
   margin: 0 5px;
   font-size: 1.5rem;
 }
 
 .social {
-  position: absolute; /* Position social icons absolutely to ensure they stay on the far right */
-  right: 0.5rem; /* Spacing from the right edge */
-  top: 0.5rem; /* Spacing from the top edge */
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
 }
+
 
 nav {
   background-color: #0055a5; /* Nav background color */
@@ -525,44 +544,6 @@ nav ul.open {display: block;}
 #hamburgerBtn.is-active span:nth-child(2) { display: block; }
 
 
-
-/* #MenuButton {
-  position: absolute;
-  top: 0.5rem;
-  right: 1rem;
-  font-size: 2rem;
-  color: var(--light-text);
-  z-index: 10;
-}
-
-#MenuButton::before {
-  content: "☰";
-}
-
-.menuOpen #MenuButton::before {
-  content: "x";
-  color: #000;
-}
-
-nav ul {
-  display: none;
-}
-
-nav.menuOpen ul {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 0.5rem;
-  right: 0rem;
-  z-index: 1;
-  background: var(--light-text);
-  width: 100%;
-  border: var(--dark-gray) solid 1px;
-} */
-
-
-
-
 /* Main content */
 #container {
   display: block;
@@ -574,6 +555,37 @@ section {
   margin-bottom: 1rem;
   padding: 1rem;
 }
+
+/* Dark Mode */
+
+#DarkModeButton {
+  position: absolute;
+  bottom: 0.1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+#DarkModeButton::before {
+  content: '🌙';
+}
+
+.darkMode #DarkModeButton::before {
+  content: '🔆';
+}
+body.dark-mode {
+  background-color: rgb(100, 59, 59);
+  color: #DDDDDD;
+}
+
+/* You can add more specific styles for dark mode if needed */
+/* .dark-mode nav {
+  background-color: #222222;
+} */
+/* .dark-mode a {
+  color: #9DAAB6;
+} */
+
 
 footer {
   background-color: #004080; /* Header background color */
