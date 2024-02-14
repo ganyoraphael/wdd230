@@ -122,7 +122,7 @@ p::first-line {
     font-weight: bold;
     color: #00FFFF;
 }
-#templeText
+#templeName
 {
     position: absolute;
     margin-left: 10%;
@@ -131,7 +131,15 @@ p::first-line {
     font-size: 1.25em;
     background-color: var(--frontColor);
 }
-
+iframe, picture img{
+    width: 100%;
+    justify-self: center;
+    padding-top: 10px;
+}
+section iframe {
+    border: 0;
+    width: 100%;
+}
 footer {display: block;
     background-color: #2e211b;
     color: white;
