@@ -6,7 +6,7 @@
     nav ul {
         flex-direction: row;
     }
-    section.map {
+    .iframe {
         grid-column: 1 / 3;
     }
     main picture 
