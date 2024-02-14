@@ -126,10 +126,12 @@ p::first-line {
 {
     position: absolute;
     margin-left: 10%;
-    margin-top: 12%;
+    margin-top: 18%;
     padding: 1em;
+    font-size: 2em;
+    font-style: italic;
+    background-color: rgb(30, 36, 17);
     font-size: 1.25em;
-    background-color: var(--frontColor);
 }
 iframe, picture img{
     width: 100%;
