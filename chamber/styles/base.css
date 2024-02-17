@@ -76,7 +76,7 @@ header section
 }
 
 .title h4, .title p {
-  display: inline-block; /* Inline block elements can be centered with text-align */
+  /* display: inline-block; Inline block elements can be centered with text-align */
   margin: 0; /* Remove margin to prevent shifting */
 }
 .title h1 {
@@ -214,13 +214,13 @@ footer {
 #container section{
   border: 1px solid black;
 }
-#hero{
+/* #hero{
   grid-column: 1/4;
   grid-row: 1/2;
 }
 #hero{
   position: relative;
-}
+} */
 #event{
   grid-column: 1/4;
   grid-row: 2/3;
@@ -406,42 +406,6 @@ section {
 }
 
 
-#hero .herodiv picture img {
-  width: 100%; /* Stretch the image to cover the full width of its container */
-  height: 100%; /* Stretch the image to cover the full height of its container */
-  object-fit: cover; /* Cover the container without losing aspect ratio */
-  display: block; /* Remove any default inline spacing */
-}
-#hero .herodiv {
-  background-image: url('./images/hero.jpg'); /* Replace with your image path */
-  background-position: center; /* Center the image */
-  background-size: cover; /* Cover the entire area of the div */
-  height: 100%; /* Set the height you want for your hero section */
-}
-
-
-
-/* Content that overlays the hero image */
-#hero .stats {
-  position: absolute; /* Relative to its normal position */
-  z-index: 2; /* Ensures the content is above the background image */
-  text-align: center; /* Center the text inside this container */
-  padding: 0.5rem; /* Add some padding */
-}
-.stats {
-  position: absolute;
-  background: radial-gradient(#2256b2, #a0b5ec);
-  border: 1px solid rgba(0,0,0,.1);
-  padding: 0.5rem;
-  box-shadow: 0 0 30px #333;
-  opacity: 0.8;
-  border-radius: 10px;
-  top: 10px;
-  left: 10px;
-  bottom: auto; /* This disables alignment from the bottom */
-  width: fit-content;
-}
-
 
 
 
@@ -466,17 +430,6 @@ section {
   right: 0.5rem;
   top: 0.5rem;
 }
-/* .social {
-  display: flex;
-  gap: 10px;
-  align-self: flex-start;
-  padding-top: 20px;
-  padding-right: 30px;
-}
-.social a {
-  color: blue;
-} */
-
 
 nav {
   background-color: #0055a5; /* Nav background color */
@@ -492,20 +445,19 @@ nav ul {
 
 nav li a {
   text-decoration: none;
-  color: #ffffff; /* Nav links color */
+  color: #ffffff; 
   padding: 10px;
   display: block;
 }
 
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-nav button{
+/* nav button{
     margin: .2rem 2vw;
     background-color: transparent;
     border: none;
     font-size: 2rem;
-    /* columns: #555; */
-}
+} */
 
 nav ul li a{
   display: block;
@@ -523,15 +475,19 @@ nav ul li a:hover {
 
 
 nav {
-  background-color: #0055a5; /* Nav background color */
+  background-color: #0055a5; 
 }
 
 nav li a {
   text-decoration: none;
-  color: #ffffff; /* Nav links color */
+  color: #ffffff;
   padding: 10px;
   display: block;
 }
+
+
+nav ul {display: none;}
+nav ul.open {display: block;}
 
 #hamburgerBtn {
   display: inline-block;
@@ -540,23 +496,20 @@ nav li a {
   color: #ffffff;
   font-size: 2rem;
   margin-right: 1rem;
+  position: fixed;
+  top: 1em;
+  left: 0em;   
+  
 }
 
-nav ul {display: none;}
-nav ul.open {display: block;}
 
-/* #hamburgerBtn span:nth-child(1) {display: block;}
-#hamburgerBtn span:nth-child(2) {display: none;}
+#hamburgerBtn span:nth-child(1) { display: block; }
+#hamburgerBtn span:nth-child(2) { display: none; }
 
-#hamburgerBtn.open span:nth-child(1) {display: none;}
-#hamburgerBtn.open span:nth-child(2) {display: block;} */
 
-#hamburgerBtn span:nth-child(1) { display: block; } /* Always show hamburger icon */
-#hamburgerBtn span:nth-child(2) { display: none; } /* Hide X icon by default */
-
-/* When 'is-active' class is toggled, hide the hamburger and show the X */
 #hamburgerBtn.is-active span:nth-child(1) { display: none; }
 #hamburgerBtn.is-active span:nth-child(2) { display: block; }
+
 
 
 /* Main content */
@@ -593,13 +546,40 @@ body.dark-mode {
   color: #DDDDDD;
 }
 
-/* You can add more specific styles for dark mode if needed */
-/* .dark-mode nav {
-  background-color: #222222;
-} */
-/* .dark-mode a {
-  color: #9DAAB6;
-} */
+
+
+.hero {
+  grid-column: 1 / 4;
+}
+
+
+
+.herolabel {
+	position: absolute;
+	top: 500px;
+	left: 30px;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+	/* Buenas */
+}
+
+.herolabel p {
+	margin: 0;
+	font-weight: 500;
+	font-size: 1.2rem;
+	font-family:"Great Vibes", serif;
+}
+.hero img {
+	width: 100%;
+	height: 100%;
+  justify-self: center;
+
+	object-fit: cover;
+}
+
 
 
 footer {
@@ -608,11 +588,3 @@ footer {
   text-align: center;
   padding: 0.1rem 0 1rem 0;
 }
-
-
-
-
-
-
-
-
