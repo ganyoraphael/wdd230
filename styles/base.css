@@ -127,12 +127,17 @@ p::first-line {
     position: absolute;
     margin-left: 10%;
     margin-top: 18%;
-    padding: 1em;
-    font-size: 2em;
+    /* padding: 1em; */
+    /* font-size: 2em; */
     font-style: italic;
-    font-size: 1.25em;
-    color: #ffffff; /* Change the color to something with higher contrast */
-    background-color: #000000; /* And/or change the background color to increase contrast */
+    /* font-size: 1.25em; */
+
+
+     color: #ffffff; /* This is white text color */
+     background-color: #333333; /* This is a dark gray background color */
+     /* Ensure the font size is readable and adjust padding as necessary */
+     font-size: 1em; /* Example font size, adjust as needed */
+     padding: 10px;
 }
 
 iframe{
