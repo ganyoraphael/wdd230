@@ -1,0 +1,11 @@
+@media screen and (max-width: 600px) {
+
+
+    #Discover {
+        grid: auto / auto;
+    }
+
+    #Discover section {
+        margin: auto 1rem auto 1rem;
+    }
+}
