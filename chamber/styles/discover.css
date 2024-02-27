@@ -81,3 +81,7 @@ section {
     opacity: .6;
     transform: scale(1.1);
 }
+img {
+  width: 100%; /* This makes image width responsive */
+  height: auto; /* This maintains the aspect ratio of the image */
+}
