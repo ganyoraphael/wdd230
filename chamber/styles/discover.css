@@ -74,14 +74,13 @@ section {
 #Pictures img {
     margin-bottom: 1rem;
     filter: saturate(25%);
+    width: 100%;
+    height: auto;
+
 }
 
 #Pictures img:hover {
     filter: saturate(100%);
     opacity: .6;
     transform: scale(1.1);
-}
-img {
-  width: 100%; /* This makes image width responsive */
-  /* height: auto; */
 }
