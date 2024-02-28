@@ -1,16 +1,27 @@
+
+:root {
+    --main-font: Arial, sans-serif;
+    --primary-color: #007bff;
+    --primary-color-hover: #0056b3;
+    --font-size-large: 1.2em;
+    --input-padding: 10px;
+    --form-max-width: 600px;
+    --default-spacing: 20px;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--main-font);
 }
 
 .form-container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
+    max-width: var(--form-max-width);
+    margin: var(--default-spacing) auto;
+    padding: var(--default-spacing);
     text-align: center;
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: var(--default-spacing);
 }
 
 input[type="text"],
@@ -19,7 +30,7 @@ input[type="email"],
 input[type="range"],
 output,
 button {
-    font-size: 1.2em;
+    font-size: var(--font-size-large);
 }
 
 input[type="text"],
@@ -27,31 +38,32 @@ input[type="password"],
 input[type="email"],
 button {
     width: 100%;
-    padding: 10px;
+    padding: var(--input-padding);
     box-sizing: border-box; /* So padding doesn't affect the width */
 }
 
 input[type="range"] {
-    width: calc(100% - 20px);
-    margin-right: 10px;
+    width: calc(100% - (2 * var(--input-padding)));
+    margin-right: var(--input-padding);
 }
 
 button {
-    background-color: #007bff;
+    background-color: var(--primary-color);
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: var(--input-padding) 15px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: var(--primary-color-hover);
 }
 
 /* Focus styles */
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus {
-    border: 2px solid #007bff;
+    border: 2px solid var(--primary-color);
     outline: none;
 }
+
