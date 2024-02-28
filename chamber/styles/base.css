@@ -563,8 +563,10 @@ body.dark-mode {
 	padding: 1.5rem;
 	box-shadow: 0 0 3rem #fff;
 	opacity: 0.75;
-	/* Buenas */
 }
+
+
+
 
 .herolabel p {
 	margin: 0;
@@ -578,6 +580,7 @@ body.dark-mode {
   justify-self: center;
 
 	object-fit: cover;
+  
 }
 
 
