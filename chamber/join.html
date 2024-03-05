@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raphael Ganyo">
+    <meta name="description" content="Chamber of Commerce site for the city of Accra, Ghana.">
+    <title>Join The Accra Chamber of Commerce</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/large.css"> 
+
+
+     <meta property="og:title" content="The UpLiFt Chamber of Commerce">
+     <meta property="og:type" content="website">
+     <meta property="og:image" content="https://ganyoraphael.github.io/wdd230/chamber/images/hero.jpg">
+     <meta property="og:url" content="https://ganyoraphael.github.io/wdd230/chamber/">
+
+    <script src="scripts/darkMode.js" defer></script>
+     <script src="scripts/script.js" defer></script>
+     <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <link rel="icon" href="favicon.ico" >
+
+
+</head>
+
+<body>
+    <div id="meet-greet">🤝🏼 Come join us for exiting experiences</div>
+    <hr>
+    
+    <div id="visitMessage" class="sidebar">Welcome! Let us know if you have any questions.</div>
+
+    <header>
+      <div class="logo">
+          <img src="images/logo.png" width="140" height="75" alt="Raph">
+      </div>
+          <div class="title-container">
+              <h1>Join The Accra Chamber of Commerce</h1>
+
+              <p>Empowering Your Success, Every Step of the Way</p>
+            </div>
+            <!-- <div class="social">
+                <a href="https://facebook.com" target="_blank" >
+                    <i class="fa-brands fa-facebook"></i> </a>
+                <a href="https://twitter.com" target="_blank">
+                    <i class="fa-brands fa-twitter"></i> </a>
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i> </a>
+            </div> -->
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <button id="DarkModeButton"></button>
+
+            
+
+    </header>
+           
+       <!-- NAVIGATION HERE Done -->
+           <nav>
+               <button id="hamburgerBtn"><span>&#9776;</span><span>x</span></button>
+               <ul id="primaryNav">
+                <li class="active"><a href="../Chamber/index.html">Home</a></li>
+                <li class="active"><a href="../Chamber/discover.html">Discover</a></li>
+
+
+
+
+                <li><a href="../Chamber/directory.html">Directory</a></li>
+                <li><a href="../Chamber/join.html">Join Now</a></li>    
+                <li><a href="../Chamber/contact.html">Contact</a></li>
+               </ul>
+               <span class="year"></span>
+           </nav>  
+
+           <main class="join-main">
+            <section class="join-section">
+                <h2>Join the Chamber</h2>
+                <form id="joinForm" action="thankyou.html" method="get" class="join-form">
+                    <div class="form-group">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="title">Title or Position:</label>
+                        <input type="text" id="title" name="title" pattern="[A-Za-z- ]{7,}" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required placeholder="raphaelganyo@domain.com">
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="orgName">Organization Name:</label>
+                        <input type="text" id="orgName" name="orgName" required>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="orgDescription">Organization Description:</label>
+                        <textarea id="orgDescription" name="orgDescription" required></textarea>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="membershipLevel">Membership Level:</label>
+                        <select id="membershipLevel" name="membershipLevel" required onchange="displayMembershipInfo()">
+                            <option value="">--Please Select--</option>
+                            <option value="NP">NP Membership</option>
+                            <option value="Bronze">Bronze Membership</option>
+                            <option value="Silver">Silver Membership</option>
+                            <option value="Gold">Gold Membership</option>
+                        </select>
+                    </div>
+                    <!-- ... -->
+                    <div class="form-group">
+                        <button type="submit" class="submit-button">Join</button>
+                    </div>
+                </form>
+            </section>
+            <section id="membershipInfoSection" class="membership-info-section">
+            </section>
+        </main>
+           
+<footer>
+    <p>
+        234 W 1st S <br>
+        Rexburg, ID 83440
+    </p>
+    <p>
+        info@UpLiFt.org <br>
+        208-603-8725
+    </p>
+
+    <div>
+        &copy; <span id="CopyrightYear"></span> | WDD 230 | Raphael Ganyo | Last Updated: <span
+            id="LastUpdated">FILL
+            THIS IN</span>
+    </div>
+</footer>
+<!-- <script src="https://kit.fontawesome.com/5716228e59.js" crossorigin="anonymous"></script> -->
+<script src="scripts/windchill.js"></script>
+<script src="scripts/visitTracker.js"></script>
+<script src="scripts/joinscript.js"></script>
+
+</body>
+</html>

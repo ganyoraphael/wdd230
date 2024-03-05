@@ -1,4 +1,4 @@
-/* Base styles that apply to all screen sizes */
+Base styles that apply to all screen sizes
 
 
 body {
@@ -284,7 +284,7 @@ main {
 	margin: 5px;
     margin-bottom: 20px;
     text-align: center;
-    color: #eee;
+    color: rgb(125, 46, 46);
 }
 #event {
     background-color: #00a4fd;
@@ -591,3 +591,268 @@ footer {
   text-align: center;
   padding: 0.1rem 0 1rem 0;
 }
+
+
+
+
+/* Join */
+
+.join-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.join-main {
+  display: flex;
+  justify-content: space-between; /* Distributes space between form and info section */
+  max-width: 95%; /* Adjust to use more of the screen width */
+  margin: 0 auto; /* Center the main content horizontally */
+  padding: 20px;
+  gap: 20px; /* Adds space between form and membership info */
+}
+.join-section,
+.membership-info-section {
+    flex: 1; /* Allows both sections to expand and fill the available space */
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Form input adjustments */
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form select,
+.join-form textarea {
+    width: 100%; /* Adjusts width to fill the container */
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+.join-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.join-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.join-form .form-group label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.join-form .form-group input,
+.join-form .form-group select,
+.join-form .form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.join-form .form-group textarea {
+  height: 100px;
+}
+
+.submit-button {
+  grid-column: span 2;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #004080;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #002855;
+}
+
+@media (max-width: 768px) {
+  .join-form {
+    grid-template-columns: 1fr;
+  }
+
+  .submit-button {
+    grid-column: span 1;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .join-main {
+      flex-direction: column;
+  }
+
+  .join-section,
+  .membership-info-section {
+      width: 100%; /* Full width on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .join-main {
+      padding: 10px;
+      gap: 10px;
+  }
+}
+
+.join-form input:invalid,
+.join-form select:invalid,
+.join-form textarea:invalid {
+  border-color: #ff6f6f;
+}
+
+.join-form input:valid,
+.join-form select:valid,
+.join-form textarea:valid {
+  border-color: #46d46a;
+}
+
+.join-form input:focus,
+.join-form select:focus,
+.join-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #004080;
+}
+
+.join-form label {
+  cursor: pointer;
+}
+.join-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.join-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+/* .membership-info-section {
+  flex: 1;
+  padding: 20px;
+  border-left: 1px solid #ccc;
+} */
+
+.membership-info-section {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f8f8f8; /* Or any other color you prefer */
+  border-radius: 5px;
+  /* Additional styling */
+}
+
+
+.membership-info {
+  display: none; /* Hide all by default */
+  /* Style for membership info boxes */
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+/* Add responsive design if necessary */
+@media (max-width: 768px) {
+  .join-main {
+    flex-direction: column;
+  }
+  .membership-info-section {
+    border-left: none;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+  }
+}
+
+
+
+/* thankyou */
+
+.thank-you-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.thank-you-section h2 {
+  color: #004080;
+  margin-bottom: 1rem;
+}
+
+.thank-you-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.thank-you-section .actions {
+  margin-top: 2rem;
+}
+
+.thank-you-section .button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #004080;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.thank-you-section .button:hover {
+  background-color: #002855;
+}
+
+/* Main container for thank you message, assuming it has a class 'thank-you-container' */
+.thank-you-container {
+  flex-direction: column;
+  justify-content: center; /* Centers vertically */
+  align-items: center; /* Centers horizontally */
+  box-sizing: border-box; /* Includes padding in the height calculation */
+}
+
+/* Styling for the individual elements within the container */
+.thank-you-message {
+  max-width: 600px; /* Adjust the width as needed */
+  width: 100%; /* Use 100% of the container width */
+  text-align: center; /* Centers the text */
+  margin-bottom: 1rem; /* Adds margin to the bottom of the message */
+}
+
+.return-home-button {
+  padding: 10px 20px; /* Adjust padding for the button */
+  background-color: #004080; /* Background color for the button */
+  color: white; /* Text color for the button */
+  text-decoration: none; /* Removes underline from links if using an <a> tag */
+  border-radius: 5px; /* Rounded corners for the button */
+  border: none; /* Removes border */
+  cursor: pointer; /* Changes the cursor to a pointer */
+}
+
+/* Make sure to adjust HTML class names to match these styles */
