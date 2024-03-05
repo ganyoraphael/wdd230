@@ -56,4 +56,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
  
+document.addEventListener('DOMContentLoaded', (event) => {
+    // Set the value of the hidden field to the current date/time in milliseconds
+    document.getElementById('currentDateTime').value = Date.now();
+  
+  });
   
