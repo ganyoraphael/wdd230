@@ -856,68 +856,115 @@ footer {
 }
 
 
+/* Directory */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: rgb(235, 221, 221);
+}
+
+.directory-main {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#directory-selector {
+  margin-bottom: 20px;
+}
+
+#directory-selector button {
+  padding: 10px 20px;
+  border: none;
+  background-color: rgb(29, 27, 38);
+  color: white;
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 1rem;
+}
+
+#directory-selector button.active {
+  background-color: #555;
+}
 
 .grid-view .member-card {
+  display: inline-block;
+  width: calc(33.333% - 20px);
+  margin: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   background: #fff;
   border-radius: 5px;
-  overflow: hidden;
-  margin: 10px;
-  width: calc(33.333% - 20px);
-  display: inline-block;
+  padding: 1rem;
 }
 
 .list-view .member-card {
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  background: #fff;
-  border-radius: 5px;
-  overflow: hidden;
-  margin: 10px;
-  width: calc(100% - 20px);
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
 }
 
-.member-card {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.list-view .member-card h2 {
+  flex: 3;
+  border-bottom: none; 
+}
+
+
+.list-view .member-card p, 
+.list-view .member-card a {
+  flex: 2;
+  text-align: right;
+  padding-right: 1rem;
 }
 
 .member-card h2 {
-  color: #333;
-  font-size: 24px;
-  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: rgb(89, 63, 104);
+  margin-bottom: 0.5rem;
+  text-decoration: none;
 }
 
 .member-card p {
   color: #666;
-  font-size: 16px;
-  margin-bottom: 10px;
+  font-size: 1rem;
 }
 
 .member-card a {
-  color: #00f;
+  color: #1a0dab;
   text-decoration: none;
   font-weight: bold;
 }
 
-#toggleView {
-  display: block;
-  margin: 20px auto;
-  padding: 10px 20px;
-  background-color: #004080;
-  color: white;
+.grid-button, .list-button {
+  padding: 10px 15px;
   border: none;
-  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
   cursor: pointer;
+  margin-right: 5px;
+}
+
+.active {
+  background-color: #0056b3;
 }
 
 @media (max-width: 768px) {
+  .directory-main {
+      width: 95%;
+  }
+  
   .grid-view .member-card,
   .list-view .member-card {
       width: calc(100% - 20px);
   }
 }
+
+

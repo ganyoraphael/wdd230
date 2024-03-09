@@ -81,18 +81,31 @@
                <span class="year"></span>
            </nav>  
  
-        <main>
-            <main>
-                <!-- <button id="toggleView" onclick="toggleView()">Toggle View</button>
-                <div id="membersContainer" class="grid-view">
-                </div> -->
-
-                <button id="toggleView" onclick="toggleView()">Toggle View</button>
-                <div id="membersContainer" class="grid-view">
-                    <!-- Member cards will be added here by the JavaScript -->
+        <!-- <main>
+          
+            <main class="directory-main">
+                <div id='directory-selector'>
+                    <button id="gridView" class="active">Grid</button>
+                    <button id="lineItemView">Line Item</button>
                 </div>
-            </main>
-        </main>
+                <hr>
+                <div id='directory-data' class='grid-view'>
+                </div>
+        </main> -->
+
+        <main class="directory-main">
+            <div id='directory-selector'>
+              <button id="gridView" class="active">Grid</button>
+              <button id="lineItemView">Line Item</button>
+            </div>
+            <hr>
+            <div id='directory-data' class='grid-view'>
+              <!-- Content goes here -->
+            </div>
+          </main>
+          
+
+        
         <footer>
             <p>
                 234 W 1st S <br>
