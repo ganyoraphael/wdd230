@@ -1,0 +1,66 @@
+[
+    {
+      "name": "Beacon Enterprises",
+      "address": "123 Hill Valley Rd, Accra",
+      "phone": "+233 20 123 4567",
+      "website": "https://beacon-enterprises.com",
+      "image": "beacon-logo.png",
+      "level": "Platinum",
+      "other": "Leading innovation in renewable energy."
+    },
+    {
+      "name": "TechRoots",
+      "address": "456 Oak Street, Accra",
+      "phone": "+233 24 234 5678",
+      "website": "https://techroots.com",
+      "image": "techroots-logo.png",
+      "level": "Gold",
+      "other": "Advancing technology for a better tomorrow."
+    },
+    {
+      "name": "EcoSolutions",
+      "address": "789 Pine Crescent, Accra",
+      "phone": "+233 50 345 6789",
+      "website": "https://ecosolutions.com",
+      "image": "ecosolutions-logo.png",
+      "level": "Silver",
+      "other": "Sustainable solutions for environmental challenges."
+    },
+    {
+      "name": "Global Dynamics",
+      "address": "101 Tech Park, Accra",
+      "phone": "+233 27 455 6789",
+      "website": "https://globaldynamics.com",
+      "image": "global-dynamics-logo.png",
+      "level": "Diamond",
+      "other": "Pioneers in AI and robotics."
+    },
+    {
+      "name": "Innovatech Ltd",
+      "address": "202 Silicon Avenue, Accra",
+      "phone": "+233 28 556 7890",
+      "website": "https://innovatech.com",
+      "image": "innovatech-logo.png",
+      "level": "Gold",
+      "other": "Innovative technology solutions for modern problems."
+    },
+    {
+      "name": "GreenTech Energy",
+      "address": "303 Renewable Rd, Accra",
+      "phone": "+233 30 667 8901",
+      "website": "https://greentechenergy.com",
+      "image": "greentech-energy-logo.png",
+      "level": "Gold",
+      "other": "Your source for sustainable energy products."
+    },
+    {
+      "name": "FinTech Revolution",
+      "address": "404 Money Blvd, Accra",
+      "phone": "+233 31 778 9012",
+      "website": "https://fintechrevolution.com",
+      "image": "fintech-revolution-logo.png",
+      "level": "Platinum",
+      "other": "Transforming finance with technology."
+    }
+  ]
+  

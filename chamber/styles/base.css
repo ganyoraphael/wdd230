@@ -855,4 +855,69 @@ footer {
   cursor: pointer; /* Changes the cursor to a pointer */
 }
 
-/* Make sure to adjust HTML class names to match these styles */
+
+
+
+
+.grid-view .member-card {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px;
+  width: calc(33.333% - 20px);
+  display: inline-block;
+}
+
+.list-view .member-card {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px;
+  width: calc(100% - 20px);
+  display: block;
+}
+
+.member-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.member-card h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.member-card p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.member-card a {
+  color: #00f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#toggleView {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .grid-view .member-card,
+  .list-view .member-card {
+      width: calc(100% - 20px);
+  }
+}
