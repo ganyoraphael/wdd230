@@ -3,7 +3,9 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
-const apikey = 'f93916b337d971e554180678001160ef';
+// const apikey = 'f93916b337d971e554180678001160ef';
+const apikey = 'ae96f33e451e474493e94ec9562118b9';
+
 const lat = '7.946527';
 const lon = '-1.023194';
 
