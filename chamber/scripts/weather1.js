@@ -1,9 +1,7 @@
-// select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
-// const apikey = 'f93916b337d971e554180678001160ef';
 const apikey = 'ae96f33e451e474493e94ec9562118b9';
 
 const lat = '7.946527';
@@ -29,7 +27,6 @@ async function apiFetch() {
       const response = await fetch(url);
       if (response.ok) {
         const data = await response.json();
-        // console.log(data); // this is for testing the call
         displayResults(data);
       } else {
           throw Error(await response.text());
@@ -40,3 +37,45 @@ async function apiFetch() {
   }
   
   apiFetch();
+
+
+  const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apikey}&units=imperial`;
+
+  function displayForecast(forecastData) {
+    const forecastContainer = document.querySelector('#forecast');
+    for (let i = 0; i < 3; i++) { 
+      const timestamp = forecastData.list[i * 8].dt_txt;
+      const iconSrc = `https://openweathermap.org/img/wn/${forecastData.list[i * 8].weather[0].icon}.png`;
+      const temp = forecastData.list[i * 8].main.temp;
+      const desc = forecastData.list[i * 8].weather[0].description;
+  
+      const forecastItem = document.createElement('div');
+      forecastItem.className = 'forecast-item';
+      forecastItem.innerHTML = `
+        <div class="forecast-date">${new Date(timestamp).toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })}</div>
+        <img src="${iconSrc}" alt="${desc}">
+        <div class="forecast-temp">${temp.toFixed(0)}&deg;F</div>
+        <div class="forecast-desc">${desc}</div>
+      `;
+  
+      forecastContainer.appendChild(forecastItem);
+    }
+  }
+  
+  async function apiFetchForecast() {
+    try {
+      const response = await fetch(forecastUrl);
+      if (response.ok) {
+        const data = await response.json();
+        displayForecast(data);
+      } else {
+          throw Error(await response.text());
+      }
+    } catch (error) {
+        console.log(error);
+    }
+  }
+  
+  apiFetchForecast();
+  
+  

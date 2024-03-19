@@ -1,22 +1,19 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    const darkModeToggle = document.getElementById('DarkModeButton');
-    const body = document.body;
-    
-    // Check for saved user preference, if it's available
-    const currentMode = localStorage.getItem('darkMode');
-    if (currentMode === 'enabled') {
-      body.classList.add('dark-mode');
+const darkmode = document.querySelector('#dark-mode');
+const bodyelt = document.querySelector("body");
+
+darkmode.addEventListener('click',()=>{
+    if (darkmode.textContent == '🌙' ){
+        document.documentElement.style.setProperty('--text-color', 'rgb(205, 133, 63');        
+        document.documentElement.style.setProperty('--background-color', 'gray');    
+            
+        bodyelt.style.backgroundColor = 'gray';
+        darkmode.textContent = '🔆'
     }
-    
-    darkModeToggle.addEventListener('click', () => {
-      body.classList.toggle('dark-mode');
-      
-      // Save the current preference to localStorage
-      if (body.classList.contains('dark-mode')) {
-        localStorage.setItem('darkMode', 'enabled');
-      } else {
-        localStorage.setItem('darkMode', 'disabled');
-      }
-    });
-  });
-  
+    else{
+        document.documentElement.style.setProperty('--text-color', 'gray');        
+        document.documentElement.style.setProperty('--background-color', 'rgb(205, 133, 63');        
+        
+        bodyelt.style.backgroundColor = 'rgb(205, 133, 63';
+        darkmode.textContent = '🌙'
+    }
+})

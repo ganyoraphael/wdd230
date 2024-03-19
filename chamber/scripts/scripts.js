@@ -30,10 +30,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById('LastUpdated').textContent = document.lastModified;
 
     // Dark mode toggle
-    const darkModeButton = document.getElementById('DarkModeButton');
-    darkModeButton.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-    });
+    // const darkModeButton = document.getElementById('DarkModeButton');
+    // darkModeButton.addEventListener('click', () => {
+    //     document.body.classList.toggle('dark-mode');
+    // });
 
     // Hamburger menu toggle
     const hamburgerBtn = document.getElementById('hamburgerBtn');
@@ -63,5 +63,24 @@ document.addEventListener('DOMContentLoaded', (event) => {
   });
 
 
+// Banner
+  document.addEventListener('DOMContentLoaded', () => {
+    const banner = document.querySelector('#meet-greet');
+    const date = new Date();
+    const dayOfWeek = date.getDay();
+    
+    // Display the banner only on Monday (1), Tuesday (2), and Wednesday (3)
+    if ([1, 2, 3].includes(dayOfWeek)) {
+        banner.style.display = 'block';
+    } else {
+        banner.style.display = 'none';
+    }
+
+    // Close banner functionality
+    const closeBannerBtn = document.querySelector('#close-banner');
+    closeBannerBtn.addEventListener('click', () => {
+        banner.style.display = 'none';
+    });
+});
 
   
