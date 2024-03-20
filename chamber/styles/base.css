@@ -90,24 +90,51 @@ section {
 }
 
 
-#container{
+/* #container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows:repeat(5, auto);
   gap: 10px;
   padding: 10px;
+} */
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 columns of equal width */
+  grid-template-rows: auto; /* rows will adjust to content height */
+  gap: 20px; /* adds space both between rows and columns */
+  padding: 10px; /* adds padding around the entire grid */
 }
+
+
+
 #container section{
   border: 1px solid black;
 }
 
-#event{
+/* #event{
   grid-column: 1/4;
   grid-row: 2/3;
+} */
+#event {
+  grid-column: 1 / 4; /* spans all 3 columns */
+  grid-row: 1; /* placed on the first row */
+  margin-bottom: 20px; /* adds extra space below the section */
+  padding: 1rem; /* Add some padding inside the section */
+  color: white; /* Adjust text color as needed */
 }
-#weather{
+
+  
+  
+
+/* #weather{
   grid-column: 1/3;
   grid-row: 3/4;
+} */
+#weather {
+  grid-column: 1 / 3; /* spans the first 2 columns */
+  grid-row: 2; /* placed on the second row */
+  margin-bottom: 20px; /* adds extra space below the section */
+
 }
 #weather, #weather * {
   margin: 0;
@@ -126,6 +153,7 @@ section {
   grid-row: 5/6;
   display: grid;
 }
+
 
 #meet-greet{
   text-align: center;
@@ -184,7 +212,7 @@ main {
 	margin: 5px;
     margin-bottom: 20px;
     text-align: center;
-    color: rgb(125, 46, 46);
+    /* color: rgb(125, 46, 46); */
 }
 #event {
     background-color: #00a4fd;
@@ -232,16 +260,25 @@ flex-direction: column;
 justify-content: space-between;
 padding: 20px;
 display: none;
+grid-column: 1 / 3; /* spans the first 2 columns */
+
 }
+
+
+#weather, #weather * {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
 #join p {
 color: #eee;
 margin-bottom: 50px ;
 text-align: center;
 font-size: 25px;
 }
-#join {
-  display:none;
-}
+
 
 
 .spotlight{
@@ -839,3 +876,35 @@ body {
 .forecast-desc {
   font-style: italic;
 }
+
+/* discover-content */
+#discover-main {
+  padding-left: 10px;
+}
+
+/* #discover-images img {
+  width: 100%;
+  border-radius: 5px;
+  height: auto;
+} */
+#discover-images img {
+  width: 100%;  /* makes the image responsive */
+  height: auto; /* maintains the aspect ratio */
+  border-radius: 5px; /* keeps your rounded corners */
+  object-fit: contain; /* ensures the image is scaled properly, add if needed */
+}
+
+
+.discover-content,
+#discover-message {
+  border: 1px solid #ffbb33;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+#discover-images h3 {
+  text-align: center;
+}
+

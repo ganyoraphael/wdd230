@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
 
 
     #Discover {
@@ -8,7 +8,34 @@
     #Discover section {
         margin: auto 1rem auto 1rem;
     }
-}
+} */
 
 
 
+/* Assuming small.css is for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+    /* Make sure the main container takes the full width */
+    #container {
+      display: block;
+      width: 100%;
+      padding: 0;
+    }
+  
+
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    /* Stack the container's children vertically */
+    #container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px; /* Adjust the space between stacked sections */
+      padding: 10px;
+    }
+  
+
+
+  }
+  
+  

@@ -1,4 +1,4 @@
-@media screen and (min-width: 769px) {
+/* @media screen and (min-width: 769px) {
   header {
       padding: 1rem 3rem;
   }
@@ -28,16 +28,10 @@
       display: flex;
   }
 
-
-
-
   #hamburgerBtn {
       display: none; 
   }
 
-
-
- 
   #container {
       display: grid;
       grid-template-columns: 1fr 2fr 1fr;
@@ -62,12 +56,12 @@
   }
 
   .hero {
-    grid-column: 2 / 3; /* Span the hero image across the second column */
-    grid-row: 1 / 3; /* Span the hero image from the first to the third grid line, covering two rows */
-    position: relative; /* Adjust if needed to position the hero image correctly within the grid */
-    width: 100%; /* Ensure the hero image takes the full width of the grid column */
-    height: 100%; /* Optional: if you want the image to take full height of the grid area */
-    z-index: 1; /* Ensures that the hero image will be placed above other elements in the grid area */
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
   #join {
@@ -112,4 +106,123 @@
       top: 644px;
       right: 42px;
   }
-}
+} */
+
+
+
+
+@media screen and (min-width: 769px) {
+    header {
+      padding: 1rem 3rem;
+    }
+  
+    .title h1 {
+      font-size: 2.5rem;
+    }
+  
+    .title p {
+      font-size: 1.25rem;
+    }
+  
+    nav ul {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    nav li {
+      margin-right: 1rem;
+    }
+  
+    nav li:last-child {
+      margin-right: 0;
+    }
+  
+    #hamburgerBtn {
+      display: none;
+    }
+  
+    #container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 10px;
+    }
+  
+    #container section {
+      width: 100%;
+    }
+  
+    .spotlight {
+      grid-column: 3/4;
+      grid-row: 1/4;
+      display: grid;
+      padding: 10px;
+      gap: 10px;
+      grid-template-rows: repeat(3, 1fr);
+    }
+  
+    /* Other specific layout adjustments for larger screens */
+  }
+  
+  #discover-images img:hover {
+    box-shadow: 0 0 50px #333;
+    }
+
+    #discover-main {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-gap: 20px;
+
+    }
+
+    #discover-images {
+        padding-top: 10px;
+    }
+    #discover-images img {
+        max-width: 100%; /* limit image width to the width of its container */
+        height: auto; /* adjust height automatically */
+        object-fit: contain; /* ensure the image fits within the given dimensions without losing its aspect ratio */
+    }
+    
+
+    #discover-sidebar {
+        border-right: 10px solid #ffbb33;
+        padding-right: 5px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+  
+    nav li {
+        margin-right: 1rem;
+    }
+  
+    nav li:last-child {
+        margin-right: 0;
+    }
+  
+    #primaryNav {
+        display: flex;
+    }
+
+    #hamburgerBtn {
+        display: none; 
+    }
+
+    #join {
+        display: block;
+    }
+
+    nav ul li a {
+        padding: .5rem 1rem;
+    }
+  
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+  
+   
+  

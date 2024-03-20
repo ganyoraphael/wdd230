@@ -6,15 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Raphael Ganyo">
     <meta name="description" content="Chamber of Commerce site for the city of Accra, Ghana.">
-    <title>Discover The Accra Chamber of Commerce</title>
+    <title>Accra Chamber of Commerce</title>
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/discover.css">
-    <link rel="stylesheet" href="styles/discoverlarge.css">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/larger.css"> 
 
@@ -24,7 +22,7 @@
      <meta property="og:url" content="https://ganyoraphael.github.io/wdd230/chamber/">
 
     <script src="scripts/darkMode.js" defer></script>
-     <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/scripts.js" defer></script>
     <script src="scripts/weather1.js" defer></script>
     <link rel="icon" href="favicon.ico" >
 
@@ -32,15 +30,19 @@
 </head>
 
 <body>
+
+    <div id="meet-greet">
+        🤝🏼 Join us for a meet and greet Wednesday night at 7:00 P.M.
+        <button id="close-banner">X</button>
+    </div>
     
-    <div id="visitMessage" class="sidebar">Welcome! Let us know if you have any questions.</div>
 
     <header>
       <div class="logo">
-          <img src="images/logo.png" width="140" height="75" alt="Raph">
+          <img src="images/logo.webp" width="140" height="75" alt="Raph">
       </div>
           <div class="title-container">
-              <h1>Discover The Accra Chamber of Commerce</h1>
+              <h1>Accra Chamber of Commerce</h1>
 
               <p>Empowering Your Success, Every Step of the Way</p>
             </div>
@@ -64,8 +66,6 @@
                 </a>
             </div>
 
-            
-
     </header>
            
        <!-- NAVIGATION HERE Done -->
@@ -73,125 +73,164 @@
                <button id="hamburgerBtn"><span>&#9776;</span><span>x</span></button>
                <ul id="primaryNav">
                 <li class="active"><a href="../Chamber/index.html">Home</a></li>
-                <li class="active"><a href="../Chamber/discover.html">Discover</a></li>
-
-
-                <li><a href="../Chamber/directory.html">Directory</a></li>
-                <li><a href="../Chamber/join.html">Join Now</a></li>    
-                <li><a href="../Chamber/contact.html">Contact</a></li>
+                <li><a href="../chamber/discover.html">Discover</a></li>
+                <li><a href="../chamber/directory.html">Directory</a></li>
+                <li><a href="../chamber/join.html">Join Now</a></li>    
+                <li><a href="../chamber/contact.html">Contact</a></li>
                </ul>
                <span class="year"></span>
            </nav>
            <div><button id="dark-mode">🌙</button></div>
+    <main id="discover-main">
+      <div id="discover-sidebar">
+        <section id="discover-message">
+          <h3></h3>
+        </section>
+        <section class="discover-content">
+          <h2>History</h2>
+          <p>
+            Independence: 6th March, 1957
+          </p>
+          <p>
+            Current Population: 34,121,985
+          </p>
+          <p>
+          Currency: GHC (Ghana Cedis)
+          </p>
+
+        </section>
+        <section class="discover-content">
+          <h2>Main Tribes</h2>
+          <p>
+            Ewes: From Volta Region
+          </p>
+          <p>
+            Akans: Ashanti Region
+          </p>
+          <p>
+            Fanti: Central Region
+          </p>
+          <p>
+            Ga: Greater Accra Region
+          </p>
+          <p>
+            Dagomba: Northen Region
+          </p>
+          <p>
+            Akwamu: Eastern Region
+          </p>
+        </section>
+        <section class="discover-content">
+          <h2>Festival Events</h2>
+          <p>
+            Homowo Festival
+          </p>
+          <p>
+            Hogbetsotso Festival
+          </p>
+          <p>
+            Bakatue Festival
+          </p>
+          <p>
+            Yam Festival
+          </p>
+          <p>
+            Kente Festival
+          </p>
+          <p>
+            Asafotu Festival
+          </p>
+          <p>
+            Kiriku Festival
+          </p>
+        </section>
+        <section class="discover-content">
+          <h2>Tourist Attractions</h2>
+          <p>The Adomi Bridge</p>
+          <p>Kwame Nkrumah Museum</p>
+          <p>The Kakum National Park </p>
+          <p>The Akosombo Dam</p>
+        </section>
+      </div>
+      <div id="discover-images">
+        <picture>
+          <img
+            src="images/pic1.webp"
+            alt="dancing"
+            loading="lazy"
+            height="600"
+          />
+        </picture>
+        <h3>Royal Dance In Display</h3>
+        <picture>
+          <img
+            src="images/pic2.webp"
+            alt="picture of a statue of the first President of Ghana"
+            loading="lazy"
+            height="599"
+          />
+        </picture>
+        <h3>The Fishing Community</h3>
+        <picture>
+          <img
+            src="images/pic3.webp"
+            alt="picture of the Ghanaians"
+            loading="lazy"
+            height="598"
+          />
+        </picture>
+        <h3>Beautiful Environment</h3>
+        <picture>
+          <img
+            src="images/pic4.webp"
+            alt="picture of Accra City"
+            loading="lazy"
+            height="597"
+          />
+        </picture>
+        <h3>Playing Time</h3>
+        <picture>
+          <img
+            src="images/pic5.webp"
+            alt="picture of Accra Mosoleum"
+            loading="lazy"
+            height="596"
+          />
+        </picture>
+        <h3>The Adomi Bridge</h3>
+        <picture>
+          <img
+            src="images/pic6.webp"
+            alt="Streetview of Accra"
+            loading="lazy"
+            height="595"
+          />
+        </picture>
+        <h3>Our Lovely Commuinity</h3>
+      </div>
+    </main>
 
 
-        <main id="Discover">
-            <section id="SideBar">
-                <h2 id="WelcomeMessage">Welcome to Our Website</h2>
-                <!-- <h2 id="WelcomeMessage"></h2> -->
-                <div class="card">
-                    <h2>History</h2>
-                    <p>Independence: 6th March, 1957</p>
-                    <p>Current Population: 34,121,985</p>
-                    <p>Currency: GHC (Ghana Cedis)</p>
-                </div>
+    <footer>
+        <p>
+            234 W 1st S <br>
+            Rexburg, ID 83440
+        </p>
+        <p>
+            info@UpLiFt.org <br>
+            208-603-8725
+        </p>
 
-                <div class="card">
-                    <h2>Main Tribes</h2>
-                    <p>Ewes: From Volta Region</p>
-                    <p>Akans: Ashanti Region</p>
-                    <p>Fanti: Central Region</p>
-                    <p>Ga: Greater Accra Region</p>
-
-                </div>
-
-                <div class="card">
-                    <h2>Festival Events</h2>
-                   
-                        <p>Homowo Festival</p>
-                        <p>Hogbetsotso Festival</p>
-                        <p>Bakatue Festival</p>
-                   
-                </div>
-
-                <div class="card">
-                    <h2>Tourist Attractions</h2>
-                        <p>The Adomi Bridge</p>
-                        <p>Kwame Nkrumah Museum</p>
-                        <p>The Kakum National Park</p>
-                </div>
-            </section>
-
-            <section id="Pictures">
-                <h2>Pictures of Ghana</h2>
-                
-                <picture>
-                    <source media="(min-width: 300px)" srcset="images/pic1.webp" type="image/webp">
-                    <source media="(min-width: 400px)" srcset="images/pic1.webp" type="image/webp">
-                    <source media="(min-width: 600px)" srcset="images/pic1.webp" type="image/webp">
-                    <img src="images/pic1.webp" alt="Landscape of Ghana"
-                        loading="lazy">
-                </picture>
-                <picture>
-                    <source media="(min-width: 300px)" srcset="images/pic2.webp" type="image/webp">
-                    <source media="(min-width: 400px)" srcset="images/pic2.webp" type="image/webp">
-                    <source media="(min-width: 600px)" srcset="images/pic2.webp" type="image/webp">
-                    <img src="images/pic2.webp" alt="Landscape of Ghana"
-                        loading="lazy">
-                </picture>
-                <picture>
-                    <source media="(min-width: 300px)" srcset="images/pic3.webp" type="image/webp">
-                    <source media="(min-width: 400px)" srcset="images/pic3.webp" type="image/webp">
-                    <source media="(min-width: 600px)" srcset="images/pic3.webp" type="image/webp">
-                    <img src="images/pic3.webp" alt="Landscape of Ghana"
-                        loading="lazy">
-                </picture>
-                <picture>
-                    <source media="(min-width: 300px)" srcset="images/pic4.webp" type="image/webp">
-                    <source media="(min-width: 400px)" srcset="images/pic4.webp" type="image/webp">
-                    <source media="(min-width: 600px)" srcset="images/pic4.webp" type="image/webp">
-                    <img src="images/pic4.webp" alt="Landscape of Ghana"
-                        loading="lazy">
-                </picture>
-                <picture>
-                    <source media="(min-width: 300px)" srcset="images/pic5.webp" type="image/webp">
-                    <source media="(min-width: 400px)" srcset="images/pic5.webp" type="image/webp">
-                    <source media="(min-width: 600px)" srcset="images/pic5.webp" type="image/webp">
-                    <img src="images/pic5.webp" alt="Landscape of Ghana"
-                        loading="lazy">
-                </picture>
-                <picture>
-                    <source media="(min-width: 300px)" srcset="images/pic7.webp" type="image/webp">
-                    <source media="(min-width: 400px)" srcset="images/pic7.webp" type="image/webp">
-                    <source media="(min-width: 600px)" srcset="images/pic7.webp" type="image/webp">
-                    <img src="images/pic7.webp" alt="Landscape of Ghana"
-                        loading="lazy">
-                </picture>
-            </section>
-        </main>
-
-        <footer>
-            <p>
-                234 W 1st S <br>
-                Rexburg, ID 83440
-            </p>
-            <p>
-                info@UpLiFt.org <br>
-                208-603-8725
-            </p>
-    
-            <div>
-                &copy; <span id="CopyrightYear"></span> | WDD 230 | Raphael Ganyo | Last Updated: <span
-                    id="LastUpdated">FILL
-                    THIS IN</span>
-            </div>
-        </footer>
-        <!-- <script src="https://kit.fontawesome.com/5716228e59.js" crossorigin="anonymous"></script> -->
-        <script src="scripts/windchill.js"></script>
-        <script src="scripts/visitTracker.js"></script>
+        <div>
+            &copy; <span id="CopyrightYear"></span> | WDD 230 | Raphael Ganyo | Last Updated: <span
+                id="LastUpdated">FILL
+                THIS IN</span>
+        </div>
+    </footer>
+    <!-- <script src="https://kit.fontawesome.com/5716228e59.js" crossorigin="anonymous"></script> -->
+    <script src="scripts/windchill.js"></script>
 
 
-        
 
 
 </body>
