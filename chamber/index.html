@@ -1,209 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Raphael Ganyo">
-    <meta name="description" content="Chamber of Commerce site for the city of Accra, Ghana.">
+    <meta
+      name="description"
+      content="This is going to be the home page for the Accra Chamber of Commerce.">
     <title>Accra Chamber of Commerce</title>
-
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <meta name="author" content="Raphael Ganyo">
+    <meta
+      property="og:url"
+      content="https://ganyoraphael.github.io/wdd230/chamber/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Accra Chamber Commerce">
+    <meta
+      property="og:description"
+      content="This is going to be the home page for the Accra Chamber of Commerce.">
+    <meta
+      property="og:image"
+      content="https://ganyoraphael.github.io/wdd230/images/profile.jpg">
+    <link rel="icon" href="favicon.ico">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
-    <!-- <link rel="stylesheet" href="styles/small.css"> -->
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/larger.css"> 
-    <link rel="stylesheet" href="styles/small.css" media="only screen and (max-width: 768px)">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/getdates.js" defer></script>
 
+    <script src="scripts/hamburger-menu.js" defer></script>
 
-     <meta property="og:title" content="The UpLiFt Chamber of Commerce">
-     <meta property="og:type" content="website">
-     <meta property="og:image" content="https://ganyoraphael.github.io/wdd230/chamber/images/hero.jpg">
-     <meta property="og:url" content="https://ganyoraphael.github.io/wdd230/chamber/">
+    <script src="scripts/darkmode.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
+    <script src="scripts/greet.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+  </head>
 
-    <!-- <script src="scripts/darkMode.js" defer></script> -->
-    <script src="scripts/darkMode.js" defer></script>
-    <script src="scripts/scripts.js" defer></script>
-    <script src="scripts/weather1.js" defer></script>
-    <link rel="icon" href="favicon.ico" >
-    
-
-
-</head>
-
-<body>
-
-    <div id="meet-greet">
-        🤝🏼 Join us for a meet and greet Wednesday night at 7:00 P.M.
-        <button id="close-banner">X</button>
-    </div>
-    
-
+  <body>
     <header>
-      <div class="logo">
-          <img src="images/logo.webp" width="140" height="75" alt="Raph">
-      </div>
-          <div class="title-container">
-              <h1>Accra Chamber of Commerce</h1>
-
-              <p>Empowering Your Success, Every Step of the Way</p>
-            </div>
-            <!-- <div class="social">
-                <a href="https://facebook.com" target="_blank" >
-                    <i class="fa-brands fa-facebook"></i> </a>
-                <a href="https://twitter.com" target="_blank">
-                    <i class="fa-brands fa-twitter"></i> </a>
-                <a href="https://instagram.com" target="_blank">
-                    <i class="fa-brands fa-instagram"></i> </a>
-            </div> -->
-            <div class="social">
-                <a href="https://facebook.com" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://instagram.com" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-
+      <a href="https://ganyoraphael.github.io/wdd230/chamber/index.html">
+        <img
+          src="images/logo.webp"
+          width="107"
+          height="100"
+          alt="brand logo">
+      </a>
+      <div>
+      <h1>Accra Chamber of Commerce</h1>
+      <h2>Empowering Your Success, Every Step of the Way</h2>
+    </div>
     </header>
-           
-       <!-- NAVIGATION HERE Done -->
-           <nav>
-               <button id="hamburgerBtn"><span>&#9776;</span><span>x</span></button>
-               <ul id="primaryNav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join Now</a></li>    
-                <li><a href="contact.html">Contact</a></li>
+    <nav>
+      <button class="menu-hide">X</button
+      ><button class="menu-show showing">&equiv;</button>
 
-                <!-- <li><a id="primaryNav" href="#">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="contact.html">Contact</a></li> -->
-
-               </ul>
-               <span class="year"></span>
-           </nav>
-           <div><button id="dark-mode">🌙</button></div>
- 
-        <main>
-            <!-- <section id="hero"> -->
-                 
-
-                <div class="hero">
-                    <picture>
-                        <source media="(max-width: 46.875em)" srcset="images/wdd230-org-small.webp">
-                        <source media="(max-width: 62.5em)" srcset="images/wdd230-org-medium.webp">
-                        <img src="images/wdd230-org-large.webp" alt="hero">
-                    </picture>
-                </div>
-
-                <section id="event">
-                    <h4>The UpLiFt</h4>
-                        <h2>Empowering Lives, Transforming Futures</h2>
-                        <p>Join us for a night of giving and make a lasting impact!</p>
-                    </section>
-           <div id="container">
-                
-
-                <section id="weather">
-                        <H4>Weather Forecast</H4>
-                    <p>Ghana: <span id="current-temp"></span> &deg;F</p>
-                    <figure>
-                        <img src="#" alt="Weather icon" id="weather-icon">
-                        <figcaption></figcaption>
-                    </figure>
-
-                    <div class="windspeed">
-                        <p>Windspeed : <span id="windValue"></span> mph</p>
-                        <p class="windvalue"></p>
-                    </div>
-                    <div class="windchill"> 
-                        <p>Windchill : <span id="chillvalue"></span></p>
-                        <p class="windchill"></p>
-                    </div>
-
-                            <!-- Forecast Container -->
-                    <div id="forecast-container">
-                        <h4>3-Day Forecast</h4>
-                        <div id="forecast" class="forecast">
-                            <!-- Forecast items will be added here by the JavaScript -->
-                        </div>
-                    </div>
-                
-            </section>
-
-            <!-- hero -->
-
-              <!-- <section> -->
-            <div class="spotlight">
-                        <section id="spotlight1">
-                    <h3>Tech Innovations Expo</h3>   
-                    <img src="images/hero.webp" alt="tech-image" >
-                    <p>"Discover the possibilities of tomorrow's technology!"</p>
-                    <HR>
-                    <p>Your journey begins here!</p>                
-                </section>
-                        <section id="spotlight2">
-                    <h3>UpLiFt Programs</h3>   
-                    <img src="images/hero.webp" alt="tech-image" >
-                    <p>"Discover the possibilities of tomorrow's technology!"</p>
-                    <HR>
-                    <p>Your journey begins here!</p> 
-                    </section>
-                        <section id="spotlight3">
-                            <h3>Empower Your Journey</h3>   
-                            <img src="images/hero.webp" alt="tech-image" >
-                            <p>"Discover the possibilities of tomorrow's technology!"</p>
-                    <HR>
-                            <p>Your journey begins here!</p> 
-                    </section>
-                    </div>
-                    <section id="newRelease">
-                        <h2>Latest from Accra Chamber of Commerce</h2>
-                        <p>Embark on a journey of discovery with UpLiFt as we unveil our newest developments and groundbreaking innovations. Our team is dedicated to pushing the boundaries of technology, bringing you cutting-edge solutions that shape the future. Join our vibrant community to stay informed and connected to the pulse of innovation.</p>
-                    </section>
-                    
-                    
-                    <section id="join">
-                        <p>Discover how to become part of the leading community for quality technological works. Join us now!</p>               
-        
-                        <button onclick="window.location.href='../chamber/join.html'">Join Us</button> 
-                    </section>
-          
-            </div>
-            <hr>
+      <ul id="nav-menu">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div><button id="dark-mode">🌙</button></div>
+    <main id="home-main">
+      <p id="meetgreet">
+        Join us for a meet and greet Wednesday night at 7:00 P.M.
+        <button id="close-greet">❌</button>
+      </p>
+      <section id="hero" class="home-section">
+        <div class="hero-container">
+          <picture>
+            <source
+              srcset="images/wdd230-org-small.webp"
+              media="(max-width:560px)">
+            <source
+              srcset="images/wdd230-org-medium.webp"
+              media="(max-width:1200px)">
+            <img src="images/wdd230-org-large.webp" alt="Hero image">
+          </picture>
+          <div class="overlay small">Small</div>
+          <div class="overlay medium">Medium</div>
+          <div class="overlay large">Large</div>
+          <a href="join.html" class="hero-text">Join The Chamber</a>
 
 
-        </main>
-        <footer>
-            <p>
-                234 W 1st S <br>
-                Rexburg, ID 83440
-            </p>
-            <p>
-                info@UpLiFt.org <br>
-                208-603-8725
-            </p>
+        </div>
+      </section>
+      <section id="form" class="home-section">
+        <form>
+          <h3>Sign up for our Newsletter</h3>
+
+          <label>Full Name</label>
+
+          <input type="text" name="username" required placeholder="Raphael Kweku">
+
+          <label>email address</label>
+
+          <input
+            type="email"
+            name="useremail"
+            id="useremail"
+            required
+            placeholder="raphaelkweku@gmail.com">
+
+          <button type="submit">Sign Up</button>
+        </form>
+      </section>
+     
+      <div id="weather-box">
+        <h2>Weather Forecast</h2>
+        <div id="current-weather">
+          <div id="current-temp"></div>
+          <img id="weather-icon" src="#" alt="weather icon">
+          <!-- <figcaption></figcaption> -->
+          <div>Wind Speed: <span id="windValue"></span> mph</div>
+          <div>Wind Chill: <span id="chillValue"></span> °F</div>
+        </div>
+        <h3>3-Day Forecast</h3>
+        <div id="forecast"></div>
+      </div>
     
-            <div>
-                &copy; <span id="CopyrightYear"></span> | WDD 230 | Raphael Ganyo | Last Updated: <span
-                    id="LastUpdated">FILL
-                    THIS IN</span>
-            </div>
-        </footer>
-        <!-- <script src="https://kit.fontawesome.com/5716228e59.js" crossorigin="anonymous"></script> -->
-        <script src="scripts/windchill.js"></script>
+      
+      <div id="spotlights" class="home-section">
+        <section id="spotlight-1" class="spotlight-card">
+          <h3>Empower Your Journey</h3>
+          <img
+            src="images/page.webp"
+            width="300"
+            height="240"
+            alt="Logo of Papaye">
+          <p>
+            "Discover the possibilities of tomorrow's technology!"<br>
+            Your journey begins here!
+          </p>
+        </section>
+        <section id="spotlight-2" class="spotlight-card">
+          <h3>UpLiFt Programs</h3>
+          <img
+            src="images/hero.webp"
+            width="300"
+            height="240"
+            alt="coding photo">
+          <p>
+            "Discover the possibilities of tomorrow's technology!"<br>
+            Your journey begins here!
+          </p>
+        </section>
+        <section id="spotlight-3" class="spotlight-card">
+          <h3>Tech Innovations Expo</h3>
+          <img
+            src="images/page1.webp"
+            width="300"
+            height="240"
+            alt="Massage photo">
+          <p>
+            "Discover the possibilities of tomorrow's technology!"<br>
+            Your journey begins here!
+          </p>
+        </section>
+      </div>
+    </main>
 
-        
-
-
-</body>
+    <footer>
+      <hr>
+      <div class="footer-logo">
+        <p>
+          <img src="images/logo.webp" alt="Logo" height="160" width="160">
+        </p>
+      </div>
+      <div class="footer-contact">
+        <p>234 W 1st S</p>
+        <p>Rexburg, ID 83440</p>
+        <p><a href="#">info@UpLiFt.org</a></p>
+        <p>+1-208-603-8725</p>
+      </div>
+      <hr>
+      <div class="footer-base">
+        <p>
+          &copy;<span id="currentyear"></span> Raphael Ganyo | Chamber Project
+          WDD 230 | Last Modified: <span id="lastmodified"></span>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

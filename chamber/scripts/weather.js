@@ -9,8 +9,10 @@ const lon = '-1.023194';
 
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apikey}&units=imperial`;
 
+// function displayResults(weatherData) {
+//     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
 function displayResults(weatherData) {
-    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+  currentTemp.textContent = `Ghana: ${weatherData.main.temp.toFixed(0)}°F`;
 
     const iconsrc = `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@4x.png`
     const desc = weatherData.weather[0].main;

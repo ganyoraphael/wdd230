@@ -1,86 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Raphael Ganyo">
-    <meta name="description" content="Chamber of Commerce site for the city of Accra, Ghana.">
-    <title>Accra Chamber of Commerce</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is  the discover page for the Accra Chamber of Commerce. Learn what the Commerce has to offer"
+    />
+    <title>Discover Page of Accra Chamber of Commerce</title>
+    <meta name="author" content="Raphael Ganyo" />
+    <meta
+      property="og:url"
+      content="https://ganyoraphael.github.io/wdd230/chamber/index.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Accra Chamber Commerce" />
+    <meta
+      property="og:description"
+      content="This is the discover page for the Accra Chamber of Commerce."
+    />
+    <meta
+      property="og:image"
+      content="https://ganyoraphael.github.io/wdd230/images/profile.jpg"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburger-menu.js" defer></script>
 
+    <script src="scripts/darkmode.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+  </head>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/larger.css"> 
-
-     <meta property="og:title" content="The UpLiFt Chamber of Commerce">
-     <meta property="og:type" content="website">
-     <meta property="og:image" content="https://ganyoraphael.github.io/wdd230/chamber/images/hero.jpg">
-     <meta property="og:url" content="https://ganyoraphael.github.io/wdd230/chamber/">
-
-    <script src="scripts/darkMode.js" defer></script>
-    <script src="scripts/scripts.js" defer></script>
-    <script src="scripts/weather1.js" defer></script>
-    <link rel="icon" href="favicon.ico" >
-
-
-</head>
-
-<body>
-
-    <div id="meet-greet">
-        🤝🏼 Join us for a meet and greet Wednesday night at 7:00 P.M.
-        <button id="close-banner">X</button>
-    </div>
-    
-
+  <body>
     <header>
-      <div class="logo">
-          <img src="images/logo.webp" width="140" height="75" alt="Raph">
+      <a href="https://ganyoraphael.github.io/wdd230/chamber/index.html">
+        <img
+          src="images/logo.webp"
+          width="107"
+          height="100"
+          alt="brand logo"
+        />
+      </a>
+      <div>
+        <h1>Accra Chamber of Commerce</h1>
+        <h2>Empowering Your Success, Every Step of the Way</h2>
       </div>
-          <div class="title-container">
-              <h1>Accra Chamber of Commerce</h1>
-
-              <p>Empowering Your Success, Every Step of the Way</p>
-            </div>
-            <!-- <div class="social">
-                <a href="https://facebook.com" target="_blank" >
-                    <i class="fa-brands fa-facebook"></i> </a>
-                <a href="https://twitter.com" target="_blank">
-                    <i class="fa-brands fa-twitter"></i> </a>
-                <a href="https://instagram.com" target="_blank">
-                    <i class="fa-brands fa-instagram"></i> </a>
-            </div> -->
-            <div class="social">
-                <a href="https://facebook.com" target="_blank">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="https://twitter.com" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="https://instagram.com" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-
     </header>
-           
-       <!-- NAVIGATION HERE Done -->
-           <nav>
-               <button id="hamburgerBtn"><span>&#9776;</span><span>x</span></button>
-               <ul id="primaryNav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join Now</a></li>    
-                <li><a href="contact.html">Contact</a></li>
-               </ul>
-               <span class="year"></span>
-           </nav>
-           <div><button id="dark-mode">🌙</button></div>
+    <nav>
+      <button class="menu-hide">X</button
+      ><button class="menu-show showing">&equiv;</button>
+
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+
+      </ul>
+    </nav>
+    <div><button id="dark-mode">🌙</button></div>
     <main id="discover-main">
       <div id="discover-sidebar">
         <section id="discover-message">
@@ -209,29 +195,26 @@
         <h3>Our Lovely Commuinity</h3>
       </div>
     </main>
-
-
     <footer>
+      <hr />
+      <div class="footer-logo">
         <p>
-            234 W 1st S <br>
-            Rexburg, ID 83440
+          <img src="images/logo.webp" alt="Logo" height="160" width="160" />
         </p>
+      </div>
+      <div class="footer-contact">
+        <p>234 W 1st S</p>
+        <p>Rexburg, ID 83440</p>
+        <p><a href="#">info@UpLiFt.org</a></p>
+        <p>+1-208-603-8725</p>
+      </div>
+      <hr />
+      <div class="footer-base">
         <p>
-            info@UpLiFt.org <br>
-            208-603-8725
+          &copy;<span id="currentyear"></span> Raphael Ganyo | Chamber Project
+          WDD 230 | Last Modified: <span id="lastmodified"></span>
         </p>
-
-        <div>
-            &copy; <span id="CopyrightYear"></span> | WDD 230 | Raphael Ganyo | Last Updated: <span
-                id="LastUpdated">FILL
-                THIS IN</span>
-        </div>
+      </div>
     </footer>
-    <!-- <script src="https://kit.fontawesome.com/5716228e59.js" crossorigin="anonymous"></script> -->
-    <script src="scripts/windchill.js"></script>
-
-
-
-
-</body>
+  </body>
 </html>
