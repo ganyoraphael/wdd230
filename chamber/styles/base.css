@@ -3,6 +3,26 @@
     --background-color: rgb(249, 245, 245);
     --hover-background-color: #72AAC0;
 }
+:root .dark-mode {
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  --main-color: #da811b;
+  --text-on-color: white;
+  --background-color: black;
+  --accent: #3C6E84;
+  --color-mode-background: black;
+  --color-mode-text: white;
+  --valid: rgb(181, 218, 181);
+  --invalid: rgb(246, 181, 181);
+}
+#color-mode::before {
+  content: "Dark Mode";
+}
+#color-mode.dark-mode::before {
+  content: "Light Mode";
+}
+
 
 body {
     font-family: 'Montserrat', sans-serif;
