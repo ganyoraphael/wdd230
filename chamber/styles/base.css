@@ -1,21 +1,23 @@
 :root {
-    --text-color: black;
-    --background-color: rgb(249, 245, 245);
-    --hover-background-color: #72AAC0;
+  --text-color: #000000;
+  --background-color: #FFFFFF;
+  --hover-background-color: #3273dc;
 }
+
 :root .dark-mode {
-  background-color: black;
+  background-color: #000000;
   font-family: 'Roboto', sans-serif;
-  color: white;
+  color: #FFFFFF;
   --main-color: #da811b;
   --text-on-color: white;
-  --background-color: black;
+  --background-color: #000000;
   --accent: #3C6E84;
   --color-mode-background: black;
   --color-mode-text: white;
   --valid: rgb(181, 218, 181);
   --invalid: rgb(246, 181, 181);
 }
+
 #color-mode::before {
   content: "Dark Mode";
 }
@@ -81,7 +83,7 @@ nav,
 footer,
 header {
     background-color: #ffbb33;
-    color: black;
+    color: #000000;;
 }
 
 header img {
@@ -141,7 +143,7 @@ footer {
     text-align: center;
     padding: 1rem;
     background: #333;
-    color: white;
+    color: #ffffff; ;
 
 
 }
@@ -322,10 +324,10 @@ button[type="submit"]:hover {
 }
 
 #weather-box {
-    background-color: #4fa3ff;
+    background-color: #004080;
     padding: 20px;
     border-radius: 10px;
-    color: white;
+    color: #ffffff;;
     width: 500px;
     margin: auto;
     text-align: center;
@@ -412,6 +414,7 @@ button[type="submit"]:hover {
 #discover-images img {
     width: 100%;
     border-radius: 5px;
+    height: auto;
 }
 
 .discover-content,
