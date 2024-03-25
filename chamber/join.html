@@ -62,63 +62,93 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <main class="join-main">
-      <section class="join-section">
-          <h2>Join the Chamber</h2>
-          <form id="joinForm" action="thankyou.html" method="get" class="join-form">
-              <div class="form-group">
-                  <label for="firstName">First Name:</label>
-                  <input type="text" id="firstName" name="firstName" required>
-              </div>
-              
-              <div class="form-group">
-                  <label for="lastName">Last Name:</label>
-                  <input type="text" id="lastName" name="lastName" required>
-              </div>
 
-              <div class="form-group">
-                  <label for="title">Title or Position:</label>
-                  <input type="text" id="title" name="title" pattern="[A-Za-z- ]{7,}" required>
-              </div>
+  <main class="main-contain">
+  
+    <!-- Membership Section -->
+    <section class="membership-section">
+      <h2>Memberships</h2>
+      <div class="membership-tier">
+        <h2>NON-PROFIT</h2>
+        <ul>
+          <li>Priority tech support</li>
+          <li>Complimentary cloud storage space</li>
+          <li>Featured app on our platform's homepage</li>
+        </ul>
+        <p class="price">$0 per year</p>
+      </div>
+      <div class="membership-tier">
+        <h2>BRONZE</h2>
+        <ul>
+          <li>Inclusion in 3 tech expos</li>
+          <li>Discounted rates for cloud services</li>
+          <li>Business listing in our app directory</li>
+        </ul>
+        <p class="price">$100 per year</p>
+      </div>
+      <div class="membership-tier">
+        <h2>SILVER</h2>
+        <ul>
+          <li>Guaranteed space in 5 tech expos</li>
+          <li>Business profile enhancement on our directory</li>
+          <li>Promotional feature in our monthly newsletter</li>
+          <li>Unlimited use of our API services</li>
+        </ul>
+        <p class="price">$210 per year</p>
+      </div>
+      <div class="membership-tier">
+        <h2>GOLD</h2>
+        <ul>
+          <li>Banner ad feature on our website for one month</li>
+          <li>Reduced fees for premium development tools</li>
+          <li>Top-tier listing on our digital map of tech providers</li>
+        </ul>
+        <p class="price">$300 per year</p>
+      </div>
+    </section>
+  
+    <!-- Contact Form Section -->
+    <section class="form-section">
+      <h2>Contact Information</h2>
+      <form action="thankyou.html" method="get">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" required>
+  
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" required>
+  
+        <label for="title">Title/Position</label>
+        <input type="text" id="title" name="title" pattern="[A-Za-z\- ]{7,}" required>
+  
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="username@example.com" required>
+  
+        <label for="phone">Mobile Phone</label>
+        <input type="tel" id="phone" name="phone" required>
+  
+        <h2>Business Information</h2>
+  
+        <label for="org-name">Business/Organization's Name</label>
+        <input type="text" id="org-name" name="org-name" required>
+  
+        <label for="description">Business Description</label>
+        <textarea id="description" name="description" required></textarea>
+  
+        <label for="membership-type">Membership Type</label>
 
-              <div class="form-group">
-                  <label for="email">Email Address:</label>
-                  <input type="email" id="email" name="email" required placeholder="raphaelganyo@domain.com">
-              </div>
-
-              <div class="form-group">
-                  <label for="phone">Phone Number:</label>
-                  <input type="tel" id="phone" name="phone" required>
-              </div>
-
-              <div class="form-group">
-                  <label for="orgName">Organization Name:</label>
-                  <input type="text" id="orgName" name="orgName" required>
-              </div>
-
-              <div class="form-group">
-                  <label for="orgDescription">Organization Description:</label>
-                  <textarea id="orgDescription" name="orgDescription" required></textarea>
-              </div>
-
-              <div class="form-group">
-                  <label for="membershipLevel">Membership Level:</label>
-                  <select id="membershipLevel" name="membershipLevel" required onchange="displayMembershipInfo()">
-                      <option value="">--Please Select--</option>
-                      <option value="NP">NP Membership</option>
-                      <option value="Bronze">Bronze Membership</option>
-                      <option value="Silver">Silver Membership</option>
-                      <option value="Gold">Gold Membership</option>
-                  </select>
-              </div>
-              <input type="hidden" id="currentDateTime" name="currentDateTime">
-              <div class="form-group">
-                  <button type="submit" class="submit-button">Join</button>
-              </div>
-          </form>
-      </section>
-      <section id="membershipInfoSection" class="membership-info-section">
-      </section>
+        <select id="membership-type" name="membership-type" required>
+          <option value="" disabled selected>Select your option</option>
+          <option value="non-profit">NON-PROFIT</option>
+          <option value="bronze">BRONZE</option>
+          <option value="silver">SILVER</option>
+          <option value="gold">GOLD</option>
+        </select>
+  
+        <input type="hidden" id="timestamp" name="timestamp">
+        <input type="submit" value="Submit Request">
+      </form>
+    </section>
+  
   </main>
 
     <footer>

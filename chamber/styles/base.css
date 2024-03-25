@@ -18,6 +18,7 @@
   --invalid: rgb(246, 181, 181);
 }
 
+
 #color-mode::before {
   content: "Dark Mode";
 }
@@ -28,7 +29,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(249, 245, 245);
+    background-color: var(--background-color);
     color: var(--text-color);
     max-width: 1200px;
     margin: auto;
@@ -113,7 +114,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image: url("../images/header2.jpeg");
+    background-image: url("../images/header.webp");
     padding: 1em;
 }
 
@@ -307,6 +308,10 @@ input[type="email"] {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
+}
+
+input, textarea, select {
+  color: var(--text-color);
 }
 
 button[type="submit"] {
@@ -597,177 +602,168 @@ footer {
 
 /* Join */
 
-.join-section {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #ffffff;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  
-  
-  
-  .join-main {
-    display: flex;
-    justify-content: space-between; 
-    max-width: 95%;
-    margin: 0 auto;
-    padding: 20px;
-    gap: 20px;
-  }
-  .join-section,
-  .membership-info-section {
-      flex: 1;
-      padding: 20px;
-      margin: 10px;
-  }
-  
-  .join-form input[type="text"],
-  .join-form input[type="email"],
-  .join-form input[type="tel"],
-  .join-form select,
-  .join-form textarea {
-      width: 100%;
-      padding: 10px;
-  }
-  
-  .join-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-  }
-  
-  .join-form .form-group {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .join-form .form-group label {
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-  
-  .join-form .form-group input,
-  .join-form .form-group select,
-  .join-form .form-group textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .join-form .form-group textarea {
-    height: 100px;
-  }
-  
-  .submit-button {
-    grid-column: span 2;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #004080;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .submit-button:hover {
-    background-color: #002855;
-  }
-  
-  @media (max-width: 768px) {
-    .join-form {
-      grid-template-columns: 1fr;
-    }
-  
-    .submit-button {
-      grid-column: span 1;
-    }
-  }
-  
-  
-  @media (max-width: 1024px) {
-    .join-main {
-        flex-direction: column;
-    }
-  
-    .join-section,
-    .membership-info-section {
-        width: 100%;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .join-main {
-        padding: 10px;
-        gap: 10px;
-    }
-  }
-  
-  .join-form input:invalid,
-  .join-form select:invalid,
-  .join-form textarea:invalid {
-    border-color: #ff6f6f;
-  }
-  
-  .join-form input:valid,
-  .join-form select:valid,
-  .join-form textarea:valid {
-    border-color: #46d46a;
-  }
-  
-  .join-form input:focus,
-  .join-form select:focus,
-  .join-form textarea:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px #004080;
-  }
-  
-  .join-form label {
-    cursor: pointer;
-  }
-  .join-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 20px;
-  }
-  
-  .join-section {
-    flex: 1;
-    margin-right: 20px;
-  }
-  .membership-info-section {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #f8f8f8;
-    border-radius: 5px;
-  }
-  
-  
-  .membership-info {
-    display: none;
-    background-color: #f8f8f8;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  
-  @media (max-width: 768px) {
-    .join-main {
-      flex-direction: column;
-    }
-    .membership-info-section {
-      border-left: none;
-      border-top: 1px solid #ccc;
-      margin-top: 20px;
-    }
+  /* General reset and basic styles */
+body, html {
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+  line-height: 1.6;
+}
+
+/* Main container styles */
+.main-contain {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  padding: 20px;
+}
+
+/* Membership container and options */
+.membership-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.membership-option {
+  background-color: #262626;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.membership-option h2 {
+  color: #0a84ff;
+}
+
+.membership-option p,
+.membership-option ul {
+  margin: 10px 0;
+}
+
+.membership-option ul {
+  padding-left: 20px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+/* Form container styles */
+.form-container {
+  background-color: #262626;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input and button styles */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #555;
+}
+
+input[type="submit"] {
+  background-color: #0a84ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #0060df;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .main-contain {
+    grid-template-columns: 1fr;
   }
 
-  .return-home-button{
-    color: #1a0dab;
-    margin-bottom: 2rem;
-
+  .membership-container {
+    order: 2;
   }
+
+  .form-container {
+    order: 1;
+    margin-bottom: 20px;
+  }
+}
+
+/* Accessibility improvements */
+a,
+a:visited {
+  color: #0a84ff;
+}
+
+a:hover,
+a:focus {
+  color: #0060df;
+}
+
+:focus {
+  outline: 3px solid #0a84ff;
+  outline-offset: 2px;
+}
+
+/* Membership Section Styling */
+.membership-tier {
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 15px; 
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #000;
+}
+.membership-tier h2 {
+  text-align: center;
+  color: rgb(48, 77, 48);
+}
+
+/* Add to the current root for dark mode */
+:root .dark-mode {
+  --border-color: #fff;
+}
+
+/* Apply root variables */
+.membership-tier {
+  border-color: var(--border-color);
+}
+
+.return-home-button{
+  color: #131515;
+  margin-bottom: 2rem;
+  background-color: #fff;
+}
+
+
+
+ /* ... other styles ... */
+
+ .main-thank-you {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  text-align: center;
+}
+
+.thank-you-section {
+  max-width: 600px;      /* Set a max-width for the section if desired */
+  padding: 20px;
+  margin: 20px;          /* Add some spacing around the section */
+  /* Remove align-items if previously set */
+}
+
+/* ... other styles ... */
