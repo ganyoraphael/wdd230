@@ -58,85 +58,123 @@
       </nav>
     </header>
     <main id="index-main">
+      <!-- Hero Section -->
       <section id="hero">
         <div class="hero-container">
-          <picture>
-            <source srcset="images/hero-small.webp" media="(max-width:560px)" />
-            <source
-              srcset="images/hero-medium.webp"
-              media="(max-width:1200px)"
-            />
-            <img src="images/hero-large.webp" alt="Hero image" />
-          </picture>
-          <button id="order-button">Order Your Drink Now!</button>
+            <div class="hero-text">
+                <span>Discover Your Flavor!</span>
+                <button id="order-button">Mix Your Smoothie</button>
+            </div>
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width:560px)" />
+                <source srcset="images/hero-medium.webp" media="(max-width:1200px)" />
+                <img src="images/hero-large.webp" alt="Hero image" />
+            </picture>
         </div>
       </section>
+  
+      <!-- Information Section -->
       <section id="information">
         <h2>
           Number of Sprecialty Smoothies Ordered:
           <span id="order-count">0</span>
         </h2>
       </section>
+  
       <section id="summary" class="index-section">
-        <img
-          src="images/santa3.webp"
-          alt="image of Santa Monica"
-          id="summary-img"
-        />
-        <h2>Santa Monica</h2>
-        <p>
-          Santa Monica, situated along the southern California coast, is a
-          vibrant coastal destination renowned for its iconic Santa Monica Pier,
-          sandy beach, and lively Third Street Promenade. This beach community
-          captures the essence of Southern Californian surf culture, offering a
-          blend of outdoor activities, cultural attractions, and a relaxed
-          coastal lifestyle. Palisades Park provides a scenic retreat with
-          panoramic views of the Pacific Ocean, adding to the area's allure.
-          Santa Monica is a cherished coastal gem that seamlessly combines
-          natural beauty with a bustling urban vibe.
-        </p>
-      </section>
-      <div id="smoothies">
-        <h2>Our best Smoothies!</h2>
-        <div class="smoothies">
-          <section id="smoothie-1" class="smoothie-section">
-            <h2>Banana Orange Bliss Smoothie</h2>
-            <img src="images/new1.webp" alt="smoothie image" />
-            <p>
-              Indulge in a burst of sunshine with our Banana Orange Bliss
-              Smoothie! This vibrant blend combines the creamy goodness of ripe
-              bananas with the zesty kick of fresh oranges, creating a tropical
-              symphony of flavors that will transport your taste buds to
-              paradise. Sip, smile, and savor the perfect harmony of sweet and
-              citrus in every delightful sip!
-            </p>
-          </section>
-          <section id="smoothie-2" class="smoothie-section">
-            <h2>Berry Power Smoothie</h2>
-            <img src="images/new3p.webp" alt="smoothie image" />
-            <p>
-              Energize your day with our Berry Power Potion! Packed with a
-              medley of succulent berries, this vibrant elixir is a burst of
-              antioxidant goodness. Unleash the power of nature's jewels and
-              fuel your vitality with each sip. Feel the zing, embrace the
-              flavor, and let the berry-powered magic revitalize your senses!
-            </p>
-          </section>
-          <section id="smoothie-3" class="smoothie-section">
-            <h2>Chocolate Peanut Butter Smoothie</h2>
-            <img src="images/new2p.webp" alt="smoothie image" />
-            <p>
-              Indulge in a symphony of decadence with our Chocolate Peanut
-              Butter Bliss Smoothie! This irresistible blend combines rich,
-              velvety chocolate with the creamy allure of peanut butter,
-              creating a luscious potion that's pure liquid delight. Sip into
-              satisfaction and let the heavenly fusion of flavors dance on your
-              palate. It's a guilt-free pleasure that turns every moment into a
-              chocolatey celebration!
-            </p>
-          </section>
+        <div class="text-container left">
+          <h2>Santa Monica</h2>
+          <p>
+            Santa Monica, situated along the southern California coast, is a
+            vibrant coastal destination renowned for its iconic Santa Monica Pier,
+            sandy beach, and lively Third Street Promenade. This beach community
+            captures the essence of Southern Californian surf culture, offering a
+            blend of outdoor activities, cultural attractions, and a relaxed
+            coastal lifestyle. Palisades Park provides a scenic retreat with
+            panoramic views of the Pacific Ocean, adding to the area's allure.
+            Santa Monica is a cherished coastal gem that seamlessly combines
+            natural beauty with a bustling urban vibe.
+          </p>
         </div>
-      </div>
+        <img src="images/santa3.webp" alt="image of Santa Monica" id="summary-img" />
+        <div class="text-container right">
+          <h2>Santa Monica</h2>
+          <p>
+            Santa Monica, situated along the southern California coast, is a
+            vibrant coastal destination renowned for its iconic Santa Monica Pier,
+            sandy beach, and lively Third Street Promenade. This beach community
+            captures the essence of Southern Californian surf culture, offering a
+            blend of outdoor activities, cultural attractions, and a relaxed
+            coastal lifestyle. Palisades Park provides a scenic retreat with
+            panoramic views of the Pacific Ocean, adding to the area's allure.
+            Santa Monica is a cherished coastal gem that seamlessly combines
+            natural beauty with a bustling urban vibe.
+          </p>
+        </div>
+      </section>
+      
+      <div id="smoothies">
+           <!-- News & Stories Section -->
+           <div class="news-stories-container">
+            <h2 class="news-stories-title">Our Specialties and best Smoothies!</h2>
+            <div class="news-stories">
+              <!-- News Story 1 -->
+              <div class="news-story">
+                <img src="images/new1.webp" alt="Championing Young Voices">
+                <div class="news-story-content">
+                  <h3 class="news-story-title">Championing Young Voices</h3>
+                  <p class="news-story-excerpt">Join hands with the RaphImpact Foundation to uplift and amplify the potential within every young girl. Our dedication to nurturing and guiding them towards a promising future is relentless. We are committed to creating a nurturing platform where dreams are forged into reality.</p>
+                  <a href="#" class="news-story-link">Order Now →</a>
+                </div>
+              </div>
+              <!-- News Story 2 -->
+              <div class="news-story">
+                <img src="images/new2p.jpg" alt="Nurturing Health and Wellbeing">
+                <div class="news-story-content">
+                  <h3 class="news-story-title">Nurturing Health and Wellbeing</h3>
+                  <p class="news-story-excerpt">At the heart of our mission lies a pledge to safeguard the health of the next generation. The RaphImpact Foundation ensures access to comprehensive healthcare and informative resources, empowering young girls to lead healthier, more informed lives.</p>
+                  <a href="#" class="news-story-link">Order Now →</a>
+                </div>
+              </div>
+              <!-- News Story 3 -->
+              <div class="news-story">
+                <img src="images/new3p.webp" alt="Fostering Growth Through Education">
+                <div class="news-story-content">
+                  <h3 class="news-story-title">Fostering Growth Through Education</h3>
+                  <p class="news-story-excerpt">Education is the cornerstone of empowerment. The Foundation spearheads initiatives to provide young girls with educational opportunities that prepare them to be informed and engaged members of society, with a focus on preventing teenage pregnancies and inspiring informed choices.</p>
+                  <a href="#" class="news-story-link">Order Now →</a>
+                </div>
+              </div>
+              <!-- News Story 4 -->
+              <div class="news-story">
+                <img src="images/new2p.webp" alt="Empowering Skills for Sustainable Livelihoods">
+                <div class="news-story-content">
+                  <h3 class="news-story-title">Empowering Skills for Sustainable Livelihoods</h3>
+                  <p class="news-story-excerpt">The RaphImpact Foundation's vocational programs are tailored to imbue young girls with the skills necessary to thrive in today's competitive world. Our hands-on training equips them with the tools to be economically independent and to contribute positively to their communities.</p>
+                  <a href="#" class="news-story-link">Order Now →</a>
+                </div>
+              </div>
+              <!-- News Story 5 -->
+              <div class="news-story">
+                <img src="images/new1.webp" alt="Advocacy for Youth Empowerment">
+                <div class="news-story-content">
+                  <h3 class="news-story-title">Advocacy for Youth Empowerment</h3>
+                  <p class="news-story-excerpt">Our commitment to youth empowerment is reflected in our vigilant advocacy efforts. We champions the causes that directly impact young girls' lives, ensuring that they have a robust support system for their varied needs and aspirations.</p>
+                  <a href="#" class="news-story-link">Order Now →</a>
+                </div>
+              </div>
+              <!-- News Story 6 -->
+              <div class="news-story">
+                <img src="images/new3p.webp" alt="Crafting Futures with Expert Insights">
+                <div class="news-story-content">
+                  <h3 class="news-story-title">Crafting Futures with Expert Insights</h3>
+                  <p class="news-story-excerpt">Guidance from seasoned professionals is invaluable. Our entity connects young minds with experts, providing a wealth of knowledge and advice to help them navigate the complexities of growing up, from health concerns to career advice.</p>
+                  <a href="#" class="news-story-link">Order Now →</a>
+                </div>
+              </div>
+              <!-- Add additional news stories as needed -->
+            </div>
+          </div>
       <section id="weather" class="index-section">
         <section id="current-weather">
           <p>Today</p>

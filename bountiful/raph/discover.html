@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kirsten Atkinson">
+    <meta name="description"
+        content="Come and be a part of our business community here in Stockholm! We work together to foster success and connection between our businesses and the thousands of world travelers who walk our streets.">
+
+    <!-- social media meta tags -->
+    <meta property="og:title" content="Stockolm Chamber of Commerce - Discover">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kirstenatkinson.github.io/wdd230/chamber/images/social-media-image.jpg">
+    <meta property="og:url" content="https://kirstenatkinson.github.io/wdd230/chamber/">
+
+    <!-- Google Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+    <!-- CSS References -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="icon" href="images/favicon.ico">
+    <title>Stockholm Chamber of Commerce Discover</title>
+</head>
+
+<body>
+    <header>
+        <picture id="hero-img">
+            <source media="(max-width: 500px)" srcset="images/hero-image-small.webp">
+            <source media="(max-width: 800px)" srcset="images/hero-image-medium.webp">
+            <img src="images/hero-image.webp" alt="Chamber of Commerce">
+        </picture>
+        <a href="index.html"><img id="logo" src="images/logo.webp" alt="logo"></a>
+        <button id="color-mode"></button>
+        <button id="responsive-menu"></button>
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-text">
+            <h1>Stockholm Chamber of Commerce</h1>
+        </div>
+    </header>
+
+    <main id="discover-main">
+        <section id="discover-sidebar">
+            <div id="welcome">
+                <p id="welcome-message"></p>
+            </div>
+            <div class="discover-cards" id="discover-card-one">
+                <h2>Why join Stockholm's Chamber of Commerce?</h2>
+                <p>Welcome to the Stockholm Chamber of Commerce, your gateway to thriving business opportunities in
+                    Sweden's capital! Joining our chamber means unlocking a wealth of benefits tailored to support and
+                    elevate your business.
+                    Our chamber hosts a myriad of local events designed to showcase and promote small
+                    businesses, providing a platform for visibility, growth, and community engagement. Join us
+                    today and harness the power of collaboration to propel your business to new heights in Stockholm's
+                    dynamic marketplace.</p>
+            </div>
+            <div class="discover-cards" id="discover-card-two">
+                <h2>Diversity in Stockholm</h2>
+                <p>About 27% of Stockholmers are immigrants or of non-Swedish background. About 15% of the city is
+                    foreign-born, which is the highest of any Nordic city. Many immigrants are concentrated in the
+                    city's suburbs, with a wide variety of languages spoken in Greater Stockholm, including: Swedish,
+                    Finnish, English, Bosnian, Arabic, Syriac, Kurdish, Persian, Dutch, Turkish, Spanish, Croation and
+                    Serbian. The largest foreign-born groups are Finns (18,000), Iraqis (16,400), Iranian (11,600).
+                    (worldpopulationreview.com)</p>
+            </div>
+            <div class="discover-cards" id="discover-card-three">
+                <h2>Be Featured in our Upcoming Events</h2>
+                <p>Members of our Commerce get exclusive advertising and reserved booths for all of our events and
+                    celebrations. This is a great opportunity to drive business for the locals and get you on the maps
+                    of our city's many tourists.</p>
+            </div>
+        </section>
+        <section id="discover-pictures">
+            <figure>
+                <img class="discover-responsive" src="images/hutorget.webp" alt="Hotorget" loading="lazy">
+                <figcaption>Hötorget</figcaption>
+            </figure>
+            <figure>
+                <img class="discover-responsive" src="images/valborg.webp" alt="Valborg" loading="lazy">
+                <figcaption>Valborg</figcaption>
+            </figure>
+            <figure>
+                <img class="discover-responsive" src="images/midsommar.webp" alt="Midsommar" loading="lazy">
+                <figcaption>Midsommar</figcaption>
+            </figure>
+            <figure>
+                <img class="discover-responsive" src="images/gamlastan-jul.webp" alt="Gamla Stan Julmarknad"
+                    loading="lazy">
+                <figcaption>Gamla Stan Julmarknad</figcaption>
+            </figure>
+            <figure>
+                <img class="discover-responsive" src="images/skansen.webp" alt="Skansen" loading="lazy">
+                <figcaption>Skansen</figcaption>
+            </figure>
+            <figure>
+                <img class="discover-responsive" src="images/gamlastan.webp" alt="Gamla Stan" loading="lazy">
+                <figcaption>Gamla Stan</figcaption>
+            </figure>
+        </section>
+
+    </main>
+
+    <footer>
+        <section id="footer-contact">
+            <h3>Contact</h3>
+            <p>+46 16 363 3783 <br>
+                connect@stockolmchamber.org <br>
+                Kungliga slottet, 107 70 Stockholm, Sweden</p>
+        </section>
+        <section id="footer-links">
+            <h3>Related Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </section>
+        <section id="site-info">
+            <p id="copyrightName"></p>
+            <p id="lastModified"></p>
+        </section>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/responsiveMenu.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/lastVisited.js"></script>
+
+</body>
+
+</html>
