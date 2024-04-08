@@ -12,7 +12,7 @@
 
 const forecastLAT = "33.1215196";
 const forecastLON = "-117.287802";
-const forecastAPIKEY = "dd1c15f9845223a7a99783c584c93af6";
+const forecastAPIKEY = "ae96f33e451e474493e94ec9562118b9";
 const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${forecastLAT}&lon=${forecastLON}&appid=${forecastAPIKEY}&units=imperial`;
 // CARLSBAD: https://api.openweathermap.org/data/2.5/forecast?lat=33.1215196&lon=-117.287802&appid=f4e7eabc96c8e72dd2d715d4dea5f961&units=imperial
 

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raphael Ganyo">
+    <meta name="description"
+        content="Come and be a part of our community! We work together to foster success and connection.">
+
+    <!-- social media meta tags -->
+    <meta property="og:title" content="Raphael Ganyo Charity Foundation - Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ganyoraphael.github.io/raph/images/social-media-image.jpg">
+    <meta property="og:url" content="https://ganyoraphael.github.io/raph/">
+
+    <!-- Google Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+    <!-- CSS References -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" defer href="styles/medium.css">
+    <link rel="stylesheet" defer href="styles/larger.css">
+
+    <link rel="icon" href="images/favicon.ico">
+    <title>Raphael Ganyo Charity Foundation</title>
+</head>
+
+<body>
+    <header>
+        <picture id="hero-img">
+            <source media="(max-width: 500px)" srcset="images/hero-image-small.webp">
+            <source media="(max-width: 800px)" srcset="images/hero-image-medium.webp">
+            <img src="images/hero-image.webp" alt="Chamber of Commerce">
+        </picture>
+        <a href="#"><img id="logo" src="images/logo.webp" alt="logo"></a>
+        <button id="color-mode"></button>
+        <button id="responsive-menu"></button>
+        <nav id="navigation">
+            <ul>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-text">
+            <h1>Raphael Ganyo Charity Foundation</h1>
+            <a href="join.html"><button id="hero-button">Join Today</button></a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- SlideShow -->
+        <div class="slideshow-container">
+            <!-- First Slide -->
+            <div class="mySlides fade">
+                <img src="images/tina.jpg" alt="slideshow">
+                <div class="text-overlay">
+                    <div class="slide-text">We Put Smiles On the Face of Young Ones.<br>You Can be Part of the big Change</div>
+                    <a href="#donate" class="slide-button">How We Help</a>
+                </div>
+            </div>
+        
+            <!-- Second Slide -->
+            <div class="mySlides fade">
+                <img src="images/tina.jpg" alt="slideshow">
+                <div class="text-overlay">
+                    <div class="slide-text">Have I done Any Good in The World Today.<br>Join The Moving Train</div>
+                    <a href="#donate" class="slide-button">How We Help</a>
+                </div>
+            </div>
+        
+            <!-- Third Slide -->
+            <div class="mySlides fade">
+                <img src="images/regina.JPG" alt="slideshow">
+                <div class="text-overlay">
+                    <div class="slide-text">Have I done Any Good in The World Today.<br>Join The Moving Train</div>
+                    <a href="#donate" class="slide-button">How We Help</a>
+                </div>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+
+        <section class="goal-section">
+            <h2>Our Goal</h2>
+            <p>Welcome to Raphael Ganyo Charity Organization!
+
+                The Nephi Foundation is steadfast in its commitment to creating a nurturing environment for young girls, laying the foundation for their growth and self-reliance through comprehensive programs. Our goals include: </p>
+            <ol>
+                <li>Fostering Personal Growth: We aim to provide the resources and support that inspire young girls to realize their potential and grow beyond societal challenges.</li>
+                <li>Empowering Future Entrepreneurs: Our entrepreneurial and vocational training programs are tailored to equip young girls with the necessary skills to succeed in the marketplace and become independent business leaders.</li>
+                <li>Ensuring Self-Reliance: Through targeted skills development, we help individuals to become economically self-sufficient, breaking the cycle of dependency and poverty.</li>
+                <li>Educating for a Better Future: We believe education is the cornerstone of empowerment, providing young girls with comprehensive knowledge about reproductive health and life skills.</li>
+                <li>Providing Access to Healthcare: Our health initiatives offer access to essential healthcare services, family planning, and information on safe reproductive choices.</li>
+                <li>Promoting Safety and Well-Being: We are dedicated to creating a safe environment for young girls, where health risks are minimized and personal well-being is prioritized.</li>
+                <li>Creating Supportive Networks: By connecting young girls with mentors and role models, we foster a supportive community that nurtures their growth and aids in navigating life's challenges.</li>
+            </ol>
+            <p>Together, we champion these objectives to pave the way for a future where young girls can lead healthy, educated, and self-reliant lives. We invite you to join us in this transformative journey!</p>
+        </section>
+
+        <section id="opportunities">
+            <h2>Opportunities</h2>
+            <div id="opportunity-one">
+                <img class="responsive" id="opportunity-one-img" src="images/midsommar.webp" alt="Midsommar Pole">
+                <h3>Midsommar</h3>
+            </div>
+            <div id="opportunity-two">
+                <img class="responsive" id="opportunity-two-img" src="images/swedish-flag.webp" alt="Swedish Flag">
+                <h3>National Day</h3>
+            </div>
+            <div id="opportunity-three">
+                <img class="responsive" id="opportunity-three-img" src="images/valborg.webp" alt="Valborg fire">
+                <h3>Valborg</h3>
+            </div>
+        </section>
+
+        <section class="make-mark-section" id="get-on-map">
+            <div id="map-text">
+                <h2>Make Your Mark</h2>
+                <p>Joining the Nephi Foundation opens the door to unique opportunities and impactful initiatives that enhance the lives of young girls in our society. Our foundation organizes various engagements, including educational workshops, health symposiums, and skill-building events. These gatherings offer our patrons the chance to engage with community leaders, form partnerships with healthcare professionals, and connect with influential educators. Through these events, we provide a stage for supporters to exhibit their commitment, build significant alliances, and assert their roles as vital contributors to the empowerment of young women. Leveraging our targeted outreach efforts and by being a part of our cause, our members can prominently feature their contributions, gaining recognition for fostering positive change and aiding in the substantial development and prosperity within the community. Stand with us, and let's collectively inscribe our legacy on the social fabric, nurturing a future where every young girl can flourish.</p>
+            </div>
+            <img id="map-img" src="images/orange-shop.webp" alt="man having a fika">
+        </section>
+        <section id="join-community">
+            <h2>Join the Community</h2>
+            <img id="hightlight-one" src="images/patr11.webp" alt="Skansen">
+            <img id="hightlight-two" src="images/hutorget.webp" alt="Hötorget">
+            <img id="hightlight-three" src="images/ostbutiken.jpg" alt="Ostbutiken Stockholm">
+            <img id="hightlight-four" src="images/stadshuset.jpg" alt="Stadshuset">
+            <img id="hightlight-five" src="images/vasamuseet.webp" alt="Vasamuseet">
+            <img id="hightlight-six" src="images/abbamuseet.webp" alt="Abbamuseet">
+            <img id="highlight-seven" src="images/cafe-schweizer.webp" alt="Café Schweizer">
+        </section>
+
+        <!-- <section> -->
+        <!-- News & Stories Section -->
+        <div class="news-stories-container">
+            <h2 class="news-stories-title">News & Stories</h2>
+            <div class="news-stories">
+              <!-- News Story 1 -->
+              <div class="news-story">
+                <img src="images/tina.jpg" alt="Championing Young Voices">
+                <div class="news-story-content">
+                  <h3 class="news-story-title">Championing Young Voices</h3>
+                  <p class="news-story-excerpt">Join hands with the RaphImpact Foundation to uplift and amplify the potential within every young girl. Our dedication to nurturing and guiding them towards a promising future is relentless. We are committed to creating a nurturing platform where dreams are forged into reality.</p>
+                  <a href="#" class="news-story-link">Learn More →</a>
+                </div>
+              </div>
+              <!-- News Story 2 -->
+              <div class="news-story">
+                <img src="images/tina.jpg" alt="Nurturing Health and Wellbeing">
+                <div class="news-story-content">
+                  <h3 class="news-story-title">Nurturing Health and Wellbeing</h3>
+                  <p class="news-story-excerpt">At the heart of our mission lies a pledge to safeguard the health of the next generation. The RaphImpact Foundation ensures access to comprehensive healthcare and informative resources, empowering young girls to lead healthier, more informed lives.</p>
+                  <a href="#" class="news-story-link">Learn More →</a>
+                </div>
+              </div>
+              <!-- News Story 3 -->
+              <div class="news-story">
+                <img src="images/tina.jpg" alt="Fostering Growth Through Education">
+                <div class="news-story-content">
+                  <h3 class="news-story-title">Fostering Growth Through Education</h3>
+                  <p class="news-story-excerpt">Education is the cornerstone of empowerment. The Foundation spearheads initiatives to provide young girls with educational opportunities that prepare them to be informed and engaged members of society, with a focus on preventing teenage pregnancies and inspiring informed choices.</p>
+                  <a href="#" class="news-story-link">Learn More →</a>
+                </div>
+              </div>
+              <!-- News Story 4 -->
+              <div class="news-story">
+                <img src="images/tina.jpg" alt="Empowering Skills for Sustainable Livelihoods">
+                <div class="news-story-content">
+                  <h3 class="news-story-title">Empowering Skills for Sustainable Livelihoods</h3>
+                  <p class="news-story-excerpt">The RaphImpact Foundation's vocational programs are tailored to imbue young girls with the skills necessary to thrive in today's competitive world. Our hands-on training equips them with the tools to be economically independent and to contribute positively to their communities.</p>
+                  <a href="#" class="news-story-link">Learn More →</a>
+                </div>
+              </div>
+              <!-- News Story 5 -->
+              <div class="news-story">
+                <img src="images/tina.jpg" alt="Advocacy for Youth Empowerment">
+                <div class="news-story-content">
+                  <h3 class="news-story-title">Advocacy for Youth Empowerment</h3>
+                  <p class="news-story-excerpt">Our commitment to youth empowerment is reflected in our vigilant advocacy efforts. We champions the causes that directly impact young girls' lives, ensuring that they have a robust support system for their varied needs and aspirations.</p>
+                  <a href="#" class="news-story-link">Learn More →</a>
+                </div>
+              </div>
+              <!-- News Story 6 -->
+              <div class="news-story">
+                <img src="images/tina.jpg" alt="Crafting Futures with Expert Insights">
+                <div class="news-story-content">
+                  <h3 class="news-story-title">Crafting Futures with Expert Insights</h3>
+                  <p class="news-story-excerpt">Guidance from seasoned professionals is invaluable. Our entity connects young minds with experts, providing a wealth of knowledge and advice to help them navigate the complexities of growing up, from health concerns to career advice.</p>
+                  <a href="#" class="news-story-link">Learn More →</a>
+                </div>
+              </div>
+              <!-- Add additional news stories as needed -->
+            </div>
+          </div>
+      <!-- </section> -->
+        <section id="weather">
+            <h2>Weather Forcast</h2>
+            <div id="api-weather">
+                <div id="current-temp">
+                    <h3>Stockholm Weather</h3>
+                </div>
+                <div id="three-day-forcast"></div>
+            </div>
+            <div id="wind-chill">
+                <p id="wind-chill-output"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section id="footer-contact">
+            <h3>Contact</h3>
+            <p>+1-208-603-8725 <br>
+                connect@raphaelganyo.org <br>
+                234 W 1st S, Rexburg, Idaho-U.S.A</p>
+        </section>
+        <section id="footer-links">
+            <h3>Related Links</h3>
+            <ul>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </section>
+        <section id="site-info">
+            <p id="copyrightName"></p>
+            <p id="lastModified"></p>
+        </section>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/responsiveMenu.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

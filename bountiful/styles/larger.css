@@ -61,40 +61,57 @@
 
 
 
-    footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* Footer*/
+
+    @media screen and (min-width: 1200px) {
+        footer {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+    
+        .footer-content {
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+    
+        .footer-section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .footer-logo {
+            flex: 0 0 auto;
+            margin-right: 10px;
+        }
+    
+        .footer-contact-details,
+        .footer-base {
+            flex-grow: 1;
+        }
+    
+        .resources,
+        .social-media {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        .resources {
+            justify-content: flex-start;
+        }
+    
+        .social-media {
+            justify-content: flex-end;
+        }
     }
-
-
-
-    .footer-logo {
-        text-align: center;
-    }
-
-    #nav-menu.showing {
-
-        display: flex;
-
-    }
-
-    .footer-contact-details {
-        margin-left: 5px;
-        border-left: none;
-        padding: 5px;
-    }
-
-    .footer-base {
-        margin-left: 5px;
-        border-left: none;
-        padding: 5px;
-        border-right: none;
-    }
-
-    .socialmedia img {
-        border-radius: 50%;
-        transition: transform 0.3s ease-in-out;
-    }
+    
+    
 
     /* Order Page
 ------------------------------------*/
@@ -126,11 +143,18 @@
         border-radius: 10px;
     }
 
+}
 
 
+@media screen and (min-width: 1200px) {
+    .image-section {
+        flex-wrap: nowrap;
+    }
 
-
-
-
+    .image-section .text-content,
+    .image-section picture {
+        flex-basis: calc(50% - 20px);
+    }
 
 }
+
